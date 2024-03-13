@@ -1,0 +1,69 @@
+﻿<RibbonWindow x:Class="ScanProject.Views.ViewImageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScanProject.Views"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        WindowStartupLocation="CenterScreen"
+        Title="ViewImageWindow"
+        Closed="RibbonWindow_Closed">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis" />
+    </Window.Resources>
+    <Grid>
+        <Grid Name="MainUI">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <!--Thanh công cụ-->
+            <Ribbon Grid.Row="0" x:Name="RibbonWin"  SelectedIndex="0">
+                <RibbonTab Header="Home">
+                    <!-- Home  group-->
+                    <RibbonGroup x:Name="ClipboardGroup" Header="Home">
+
+                        <RibbonButton x:Name="CropButton" 
+                                      LargeImageSource="\Resource\Image\cropicon.png" 
+                                      Click="CropButton_Click" 
+                                      Label="Crop"/>
+
+                        <RibbonButton LargeImageSource="\Resource\Image\rotaterighticon.png" 
+                                      Label="Rotate"/>
+
+                        <RibbonButton x:Name="CutButton" 
+                                      LargeImageSource="\Resource\Image\cuticon.png" 
+                                      Label="Remove" Click="CutButton_Click" />
+
+                        <RibbonButton LargeImageSource="\Resource\Image\saveicon.png" 
+                                      Label="Save" Click="SaveButton_Click"/>
+
+                        <RibbonButton LargeImageSource="\Resource\Image\undoicon.png" 
+                                      Label="Redo" Click="SaveButton_Click"/>
+                        
+                    </RibbonGroup>
+                </RibbonTab>
+            </Ribbon>
+            
+            <!--Main Screen-->
+            <Grid Grid.Row="1">
+                <Grid x:Name="BackPanel" Width="Auto" Height="Auto">
+                    <Image x:Name="ImageView" 
+                           Stretch="Uniform"  
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Stretch" 
+                           Source="{Binding bitmapImage}">
+                    </Image>
+                    <Canvas>
+                        <Rectangle x:Name="selectionRectangle"
+                            StrokeThickness="1"
+                            Stroke="LightBlue"
+                            Fill="#220000FF"
+                            Visibility="Collapsed"/>
+                    </Canvas>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</RibbonWindow>

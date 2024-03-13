@@ -1,0 +1,32 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!--Group Header-->
+    <Style TargetType="{x:Type HeaderedContentControl}" x:Key="Head_Content_Control">
+        <Setter Property="Control.Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type HeaderedContentControl}">
+                    <Grid Background="White">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
+                            <ContentPresenter
+                                            Content="{TemplateBinding HeaderedContentControl.Header}"
+                                            ContentTemplate="{TemplateBinding HeaderedContentControl.HeaderTemplate}"
+                                            ContentSource="Header" VerticalAlignment="Center" Width="330">
+                            </ContentPresenter>
+                            <ContentPresenter                             
+                                            Content="{TemplateBinding ContentControl.Content}"
+                                            ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}"
+                                            HorizontalAlignment="Left"/>
+                        </StackPanel>
+                        <Separator HorizontalAlignment="Stretch" Grid.Row="1"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--Group Header-->
+</ResourceDictionary>

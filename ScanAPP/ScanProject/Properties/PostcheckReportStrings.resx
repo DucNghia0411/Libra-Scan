@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Total_ListItem" xml:space="preserve">
+    <value>Tổng hợp</value>
+  </data>
+  <data name="Turn_ListItem" xml:space="preserve">
+    <value>Vé lượt</value>
+  </data>
+  <data name="Others_ListItem" xml:space="preserve">
+    <value>Xem xét</value>
+  </data>
+  <data name="Priority_ListItem" xml:space="preserve">
+    <value>Ưu tiên</value>
+  </data>
+  <data name="Device_ListItem" xml:space="preserve">
+    <value>OBU, Smartcard</value>
+  </data>
+  <data name="Period_ListItem" xml:space="preserve">
+    <value>Vé tháng, quí</value>
+  </data>
+  <data name="YesNoQuestion_Load" xml:space="preserve">
+    <value>Bạn có muốn load lại dữ liệu không ?</value>
+  </data>
+  <data name="CodeObjectString" xml:space="preserve">
+    <value>Mã đối tượng</value>
+  </data>
+  <data name="ConditionReport" xml:space="preserve">
+    <value>Điều kiện thống kê</value>
+  </data>
+  <data name="DayString" xml:space="preserve">
+    <value>Ngày</value>
+  </data>
+  <data name="EmployeeString" xml:space="preserve">
+    <value>Nhân viên</value>
+  </data>
+  <data name="FromDay" xml:space="preserve">
+    <value>Từ ngày</value>
+  </data>
+  <data name="LaneString" xml:space="preserve">
+    <value>Làn</value>
+  </data>
+  <data name="ObjectString" xml:space="preserve">
+    <value>Đối tượng</value>
+  </data>
+  <data name="ShiftDay" xml:space="preserve">
+    <value>Ngày ca</value>
+  </data>
+  <data name="ShiftString" xml:space="preserve">
+    <value>Ca</value>
+  </data>
+  <data name="StationString" xml:space="preserve">
+    <value>Trạm</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>Mệnh giá</value>
+  </data>
+  <data name="ToDay" xml:space="preserve">
+    <value>Đến ngày</value>
+  </data>
+  <data name="AllString" xml:space="preserve">
+    <value>Tất cả</value>
+  </data>
+  <data name="CogregisString" xml:space="preserve">
+    <value>Số xe</value>
+  </data>
+  <data name="DateControlString" xml:space="preserve">
+    <value>Ngày giờ kiểm soát</value>
+  </data>
+  <data name="EmployeeControl" xml:space="preserve">
+    <value>Kiểm soát viên</value>
+  </data>
+  <data name="EmployeePostCheck" xml:space="preserve">
+    <value>Nhân viên hậu kiểm</value>
+  </data>
+  <data name="IsPostCheckString" xml:space="preserve">
+    <value>Đã hậu kiểm</value>
+  </data>
+  <data name="NotPostCheckString" xml:space="preserve">
+    <value>Chưa hậu kiểm</value>
+  </data>
+  <data name="PostCheckString" xml:space="preserve">
+    <value>Hậu kiểm</value>
+  </data>
+  <data name="PriceString" xml:space="preserve">
+    <value>Giá vé</value>
+  </data>
+  <data name="PrintReportString" xml:space="preserve">
+    <value>_In báo cáo</value>
+  </data>
+  <data name="RegisplateString" xml:space="preserve">
+    <value>Số xe</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>Xuất _Excel</value>
+  </data>
+  <data name="ResultPostString" xml:space="preserve">
+    <value>KQ nhân viên hậu kiểm</value>
+  </data>
+  <data name="ResultSysPostString" xml:space="preserve">
+    <value>KQ hệ thống hậu kiểm</value>
+  </data>
+  <data name="ReviewString" xml:space="preserve">
+    <value>KQ hậu kiểm</value>
+  </data>
+  <data name="STT" xml:space="preserve">
+    <value>STT</value>
+  </data>
+  <data name="TypeControl" xml:space="preserve">
+    <value>Loại kiểm soát</value>
+  </data>
+  <data name="WatchReportString" xml:space="preserve">
+    <value>_Xem báo cáo</value>
+  </data>
+  <data name="Array" xml:space="preserve">
+    <value>"Tất cả", "Hợp lệ", "Không hợp lệ","Đang xem xét"</value>
+  </data>
+  <data name="ArrayReviewString" xml:space="preserve">
+    <value>"Tất cả", "Vé lượt", "Vé thời gian", "OBU 1 mảnh","OBU thời gian" ,"OBU 2 mảnh", "SmartCard", "SmartCard thời gian", "Ưu tiên 1 xe", "Ưu tiên đoàn xe", "Bộ tài chính"</value>
+  </data>
+  <data name="ControlString" xml:space="preserve">
+    <value>Kiểm soát</value>
+  </data>
+  <data name="DateString" xml:space="preserve">
+    <value>Thời gian</value>
+  </data>
+  <data name="ErrorString" xml:space="preserve">
+    <value>Lỗi</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Ngày</value>
+  </data>
+  <data name="SysPostCheck" xml:space="preserve">
+    <value>Hệ thống hậu kiểm</value>
+  </data>
+  <data name="AllShiftString" xml:space="preserve">
+    <value>Tất cả các ngày ca</value>
+  </data>
+  <data name="AllStationString" xml:space="preserve">
+    <value>Tất cả các trạm</value>
+  </data>
+  <data name="Btc" xml:space="preserve">
+    <value>Bộ tài chính</value>
+  </data>
+  <data name="Counter" xml:space="preserve">
+    <value>Vé lượt</value>
+  </data>
+  <data name="CountTime" xml:space="preserve">
+    <value>Vé thời gian</value>
+  </data>
+  <data name="GroupIsforce" xml:space="preserve">
+    <value>ƯT đoàn xe</value>
+  </data>
+  <data name="Isforce" xml:space="preserve">
+    <value>ƯT1X CT</value>
+  </data>
+  <data name="NotData" xml:space="preserve">
+    <value>Không tìm thấy dữ liệu cho điều kiện thống kê bạn chọn !</value>
+  </data>
+  <data name="NotDataPrintReport" xml:space="preserve">
+    <value>Không có dữ liệu để in báo cáo !</value>
+  </data>
+  <data name="Notvalid" xml:space="preserve">
+    <value>Không hợp lệ</value>
+  </data>
+  <data name="OBU1" xml:space="preserve">
+    <value>OBU 1 mảnh</value>
+  </data>
+  <data name="OBU2" xml:space="preserve">
+    <value>OBU 2 mảnh</value>
+  </data>
+  <data name="OBUTime" xml:space="preserve">
+    <value>OBU thời gian</value>
+  </data>
+  <data name="ReportEmployeeString" xml:space="preserve">
+    <value>Thống kê kết quả nhân viên hậu kiểm</value>
+  </data>
+  <data name="Review" xml:space="preserve">
+    <value>Đang xem xét</value>
+  </data>
+  <data name="SmartCard" xml:space="preserve">
+    <value>Thẻ</value>
+  </data>
+  <data name="SmartCardTime" xml:space="preserve">
+    <value>Thẻ thời gian</value>
+  </data>
+  <data name="Valid" xml:space="preserve">
+    <value>Hợp lệ</value>
+  </data>
+  <data name="DefaultValidDateTime" xml:space="preserve">
+    <value>Ngày định dạng sai. Vui lòng kiểm tra lại !</value>
+  </data>
+  <data name="FinishReportPrint" xml:space="preserve">
+    <value>Đã in hoàn tất</value>
+  </data>
+  <data name="NotCheckString" xml:space="preserve">
+    <value>Chưa tiền kiểm</value>
+  </data>
+  <data name="NotReviewString" xml:space="preserve">
+    <value>Chưa xác định</value>
+  </data>
+  <data name="PostCheckNotValidString" xml:space="preserve">
+    <value>Đã hậu kiểm không hợp lệ</value>
+  </data>
+  <data name="PostCheckValidString" xml:space="preserve">
+    <value>Đã hậu kiểm hợp lệ</value>
+  </data>
+  <data name="TypeGridString" xml:space="preserve">
+    <value>Dạng lưới</value>
+  </data>
+  <data name="TypeReportString" xml:space="preserve">
+    <value>Xem báo cáo</value>
+  </data>
+  <data name="DateHour" xml:space="preserve">
+    <value>Ngày giờ</value>
+  </data>
+  <data name="ReportTitlePostCheckTurnTickket" xml:space="preserve">
+    <value>Thống kê các lượt xe qua làn - hậu kiểm vé lượt</value>
+  </data>
+  <data name="RouteName" xml:space="preserve">
+    <value>Lộ trình</value>
+  </data>
+  <data name="TickketCode" xml:space="preserve">
+    <value>Mã vé</value>
+  </data>
+  <data name="ReportTitlePostCheckResultIsForce" xml:space="preserve">
+    <value>Thống kê các lượt xe qua làn - hậu kiểm xe ưu tiên</value>
+  </data>
+  <data name="CodeTagIsForce" xml:space="preserve">
+    <value>Mã thẻ ưu tiên</value>
+  </data>
+  <data name="DateClose" xml:space="preserve">
+    <value>Ngày giờ đóng</value>
+  </data>
+  <data name="DateOPen" xml:space="preserve">
+    <value>Ngày giờ mở</value>
+  </data>
+  <data name="TurnCount" xml:space="preserve">
+    <value>Số lượt</value>
+  </data>
+  <data name="TypeIsForce" xml:space="preserve">
+    <value>Loại ưu tiên</value>
+  </data>
+  <data name="CodeDevide" xml:space="preserve">
+    <value>Mã thiết bị</value>
+  </data>
+  <data name="CogRegisNumber" xml:space="preserve">
+    <value>Số xe ND</value>
+  </data>
+  <data name="CustomerName" xml:space="preserve">
+    <value>Khách hàng</value>
+  </data>
+  <data name="DateEffective" xml:space="preserve">
+    <value>Ngày hiệu lực</value>
+  </data>
+  <data name="DateExprired" xml:space="preserve">
+    <value>Ngày hết hạn</value>
+  </data>
+  <data name="MoneyBalance" xml:space="preserve">
+    <value>Tiền còn lại</value>
+  </data>
+  <data name="Moneydevide" xml:space="preserve">
+    <value>Tiền trừ</value>
+  </data>
+  <data name="RegisPlateNumber" xml:space="preserve">
+    <value>Số xe đăng ký</value>
+  </data>
+  <data name="ReportTitlePostCheckCounterDecuted" xml:space="preserve">
+    <value>Thống kê các lượt xe qua làn - hậu kiểm vé lượt trừ dần</value>
+  </data>
+  <data name="TypeDevide" xml:space="preserve">
+    <value>Loại thiết bị</value>
+  </data>
+  <data name="TypeVehicle" xml:space="preserve">
+    <value>Loại xe</value>
+  </data>
+  <data name="ReportTitlePostCheckCounteVehicle" xml:space="preserve">
+    <value>Thống kê các lượt xe qua làn - hậu kiểm các lượt xe qua làn</value>
+  </data>
+  <data name="ReportTitlePostCheckCounterPeriod" xml:space="preserve">
+    <value>Thống kê các lượt xe qua làn - hậu kiểm vé có thời hạn</value>
+  </data>
+  <data name="DateFrom" xml:space="preserve">
+    <value>Thời hạn từ</value>
+  </data>
+  <data name="DateTo" xml:space="preserve">
+    <value>Thời hạn đến</value>
+  </data>
+  <data name="ImportMoney" xml:space="preserve">
+    <value>Tiền thu</value>
+  </data>
+  <data name="TicketType" xml:space="preserve">
+    <value>Loại vé</value>
+  </data>
+  <data name="CheckDate" xml:space="preserve">
+    <value>Ngày giờ</value>
+  </data>
+  <data name="Codevehilce" xml:space="preserve">
+    <value>Mã vé</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>Lộ trình</value>
+  </data>
+  <data name="PostcheckResultDetailViewModel_PostcheckResultDetailViewModel_PNG_File___png" xml:space="preserve">
+    <value>PNG File|*.png</value>
+  </data>
+  <data name="PostCheckCounterDetailViewModel_PostCheckCounterDetailViewModel_PNG_File___png" xml:space="preserve">
+    <value>PNG File|*.png</value>
+  </data>
+  <data name="PostCheckDetailIsForceViewModel_PostCheckDetailIsForceViewModel_PNG_File___png" xml:space="preserve">
+    <value>PNG File|*.png</value>
+  </data>
+  <data name="DecutedSmartCard" xml:space="preserve">
+    <value>SmartCard trừ dần</value>
+  </data>
+  <data name="information" xml:space="preserve">
+    <value>Thông báo</value>
+  </data>
+  <data name="SelectCardorCountReport" xml:space="preserve">
+    <value>Chọn card hoặc vé để thống kê !</value>
+  </data>
+  <data name="SelectCountOBUSmartCardReport" xml:space="preserve">
+    <value>Chọn vé giấy, OBU hoặc SmartCard để thống kê !</value>
+  </data>
+  <data name="SelectCountPeriodDecutedIsforceReport" xml:space="preserve">
+    <value>Chọn 1 lượt, tháng quí, trừ dần hoặc ưu tiên để thống kê !</value>
+  </data>
+  <data name="SelectIsforceGroupIsforceReport" xml:space="preserve">
+    <value>Chọn ưu tiên 1 xe, ưu tiên đoàn xe để thống kê !</value>
+  </data>
+  <data name="SelectOBu1OBU2SmartCardReport" xml:space="preserve">
+    <value>Chọn OBU 1 mảnh, OBU 2 mảnh hoặc SmartCard để thống kê !</value>
+  </data>
+  <data name="CountTimeMonth" xml:space="preserve">
+    <value>Vé tháng</value>
+  </data>
+  <data name="CountTimeQuarter" xml:space="preserve">
+    <value>Vé quí</value>
+  </data>
+  <data name="ObuMonth" xml:space="preserve">
+    <value>Obu tháng</value>
+  </data>
+  <data name="ObuQuarter" xml:space="preserve">
+    <value>Obu quí</value>
+  </data>
+  <data name="SmartCardMonth" xml:space="preserve">
+    <value>Thẻ tháng</value>
+  </data>
+  <data name="SmartCardQuarter" xml:space="preserve">
+    <value>Thẻ quí</value>
+  </data>
+  <data name="TitilePostCheck" xml:space="preserve">
+    <value>Thống kê kết quả hậu kiểm</value>
+  </data>
+  <data name="TrafficNotError" xml:space="preserve">
+    <value>Có lỗi khi thống kê: (SupervisionTrafficReportViewModel)(this.DataContext) == null</value>
+  </data>
+  <data name="HourelessThanHourEnd" xml:space="preserve">
+    <value>Giờ bắt đầu phải nhỏ hơn giờ kết thúc !</value>
+  </data>
+  <data name="ReportPostCheck" xml:space="preserve">
+    <value>Thống kê kết quả hậu kiểm </value>
+  </data>
+  <data name="AdvanceFind" xml:space="preserve">
+    <value>Tìm kiếm nâng cao</value>
+  </data>
+  <data name="ReportErrorFormVehicleInformationManual" xml:space="preserve">
+    <value>Cập nhật cơ sở dữ liệu chuẩn</value>
+  </data>
+  <data name="ErrorNotChangeForm" xml:space="preserve">
+    <value>Không thao tác chuyển form được</value>
+  </data>
+  <data name="ErrorNotClose" xml:space="preserve">
+    <value>Đóng form không thao tác được</value>
+  </data>
+  <data name="ErrorNotDelete" xml:space="preserve">
+    <value>Xóa dữ liệu không thao tác được</value>
+  </data>
+  <data name="ErrorNotLoadData" xml:space="preserve">
+    <value>Không load được dữ liệu lên các control</value>
+  </data>
+  <data name="ErrorNotLoadShowSearch" xml:space="preserve">
+    <value>Không thao tác được hàm tìm kiếm</value>
+  </data>
+  <data name="ErrorNotSaveData" xml:space="preserve">
+    <value>Lưu dữ liệu không thành công</value>
+  </data>
+  <data name="ErrorNotReport" xml:space="preserve">
+    <value>Xuất báo cáo bị lỗi</value>
+  </data>
+  <data name="ReportErrorFormPostCheckIsforce" xml:space="preserve">
+    <value>Thống kê các lượt xe qua làn: Hậu kiểm xe ưu tiên</value>
+  </data>
+  <data name="ErrorNotExcel" xml:space="preserve">
+    <value>Xuất ra Excel bị lỗi</value>
+  </data>
+  <data name="ErrorNotPrint" xml:space="preserve">
+    <value>In báo cáo bị lỗi</value>
+  </data>
+  <data name="ErrorNotLoadDataTicket" xml:space="preserve">
+    <value>Không load được giá vé lên combobox</value>
+  </data>
+  <data name="ErrorNotLoadDataVehicle" xml:space="preserve">
+    <value>Không load được loại phương tiện lên combobox</value>
+  </data>
+  <data name="ErrorNotProcess" xml:space="preserve">
+    <value>Xử lý dữ liệu bị lỗi</value>
+  </data>
+  <data name="ErrorNotSession" xml:space="preserve">
+    <value>Không gán được giá trị cho biến</value>
+  </data>
+  <data name="ReportErrorFormPostCheckCounterDecuted" xml:space="preserve">
+    <value>Thống kê các lượt xe qua làn : Hậu kiểm vé lượt trừ dần</value>
+  </data>
+  <data name="ReportErrorFormVehicleInformationFind" xml:space="preserve">
+    <value>Tìm phương tiện</value>
+  </data>
+  <data name="ReportErrorFormPostCheckCounter" xml:space="preserve">
+    <value>Thống kê các lượt xe qua làn : hậu kiểm vé lượt</value>
+  </data>
+  <data name="ReportErrorFormPostCheckPeriod" xml:space="preserve">
+    <value>Thống kê các lượt xe qua làn : Hậu kiểm vé thời gian</value>
+  </data>
+  <data name="ErrorNotProgessbar" xml:space="preserve">
+    <value>Không thao tác được bất đồng bộ</value>
+  </data>
+  <data name="ErrorUpdateData" xml:space="preserve">
+    <value>Lỗi cập nhật dữ liệu. Hãy kiểm tra kết nối.</value>
+  </data>
+  <data name="ReportErrorFormPostCheckCounterVehicle" xml:space="preserve">
+    <value>Thống kê các lượt xe qua làn : Hậu kiểm các lượt xe qua làn</value>
+  </data>
+  <data name="ReportErrorFormVehicleInformation" xml:space="preserve">
+    <value>Cập nhật cơ sở dữ liệu đăng kiểm</value>
+  </data>
+  <data name="IsForceNoCard" xml:space="preserve">
+    <value>ƯT1X KT</value>
+  </data>
+  <data name="IsForceTurnBack" xml:space="preserve">
+    <value>Xe quay đầu</value>
+  </data>
+</root>

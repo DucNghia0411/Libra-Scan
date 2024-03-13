@@ -1,0 +1,545 @@
+﻿<Window x:Class="ScanProject.View.BatchManagerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:ScanProject.View"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="QUẢN LÝ GÓI TÀI LIỆU" Height="660" Width="1200"
+        WindowStyle="SingleBorderWindow">
+    <Window.Resources>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#00AE72" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="BorderThickness" Value="2" />
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="Width" Value="100" />
+            <Setter Property="Height" Value="35" />
+        </Style>
+        
+        <Style x:Key="SmallButtonStyle" TargetType="Button">
+            <Setter Property="Width" Value="30" />
+            <Setter Property="Height" Value="30" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="BorderThickness" Value="2" />
+        </Style>
+        
+        <Style x:Key="GridViewExtraStyle" TargetType="{x:Type GridViewColumnHeader}">
+            <Setter Property="Background" Value="{x:Null}"/>
+            <Setter Property="Foreground" Value="{x:Null}"/>
+            <Setter Property="BorderBrush" Value="{x:Null}"/>
+            <Setter Property="Width" Value="1000"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Grid>
+                <GroupBox
+                    materialDesign:ColorZoneAssist.Background="#00AE72"
+                    materialDesign:ColorZoneAssist.Foreground="Black"
+                    materialDesign:ColorZoneAssist.Mode="Custom"                    
+                    Header="TẠO MỚI GÓI TÀI LIỆU"
+                    FontWeight="Bold"
+                    BorderThickness="2" 
+                    Margin="10,10,10,10">
+                </GroupBox>
+
+                <Label Content="Tên gói:" 
+                       HorizontalAlignment="Left" 
+                       Margin="20,60,0,0" 
+                       VerticalAlignment="Top"
+                       FontSize="14"/>
+
+                <TextBox 
+                    x:Name="txtBatchName"
+                    HorizontalAlignment="Left" 
+                    Margin="80,55,0,0" 
+                    TextWrapping="Wrap" 
+                    VerticalAlignment="Top" 
+                    Width="160"
+                    Height="35"/>
+
+                <Label Content="Ghi chú:" 
+                       HorizontalAlignment="Left" 
+                       Margin="20,110,0,0" 
+                       VerticalAlignment="Top"
+                       FontSize="14"/>
+
+
+                <Button Content="Tạo mới" 
+                        Style="{StaticResource ButtonStyle}"
+                        HorizontalAlignment="Left" 
+                        VerticalAlignment="Top" 
+                        Click="CreateBatch_ClickAsync" 
+                        Margin="140,155,0,0" />
+
+                <TextBox 
+                    x:Name="txtBatchNote"
+                    HorizontalAlignment="Left" 
+                    Margin="80,105,0,0" 
+                    TextWrapping="Wrap" 
+                    VerticalAlignment="Top" 
+                    Width="160"
+                    Height="35"/>
+            </Grid>
+        </Grid>
+        <!-- Batches List -->
+        <Grid Grid.Column="1">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"></RowDefinition>
+                <RowDefinition Height="5*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <GroupBox 
+                    IsHitTestVisible="True"
+                    Header="DANH SÁCH GÓI TÀI LIỆU"
+                    FontWeight="Bold"
+                    materialDesign:ColorZoneAssist.Background="#00AE72"
+                    materialDesign:ColorZoneAssist.Foreground="Black"
+                    materialDesign:ColorZoneAssist.Mode="Custom"
+                    BorderThickness="2" 
+                    Margin="10,10,10,10">
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="5.5*"></ColumnDefinition>
+                            <ColumnDefinition Width="1.5*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <ListView x:Name="lstvBatches" 
+                            MouseDoubleClick="lstvBatches_MouseDoubleClick" 
+                            ItemsSource="{Binding return_data}"
+                            Grid.Column="0"
+                            ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                            ScrollViewer.ScrollChanged="lstvBatches_ScrollChanged">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn DisplayMemberBinding="{Binding Name}" 
+                                                Width="250">
+                                        <GridViewColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Tên gói"
+                                                       FontSize="14"
+                                                       Foreground="Black"
+                                                       FontWeight="Bold"></TextBlock>
+                                            </DataTemplate>
+                                        </GridViewColumn.HeaderTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn DisplayMemberBinding="{Binding Created}"
+                                                Width="200">
+                                        <GridViewColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Ngày tạo"
+                                                       FontSize="14"
+                                                       Foreground="Black"
+                                                       FontWeight="Bold"
+                                                       TextAlignment="Center"></TextBlock>
+                                            </DataTemplate>
+                                        </GridViewColumn.HeaderTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn DisplayMemberBinding="{Binding Status}" 
+                                                Width="150">
+                                        <GridViewColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Trạng thái"
+                                                       FontSize="14"
+                                                       Foreground="Black"
+                                                       FontWeight="Bold"></TextBlock>
+                                            </DataTemplate>
+                                        </GridViewColumn.HeaderTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn DisplayMemberBinding="{Binding Note}" 
+                                                Width="150">
+                                        <GridViewColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Ghi chú"
+                                                       FontSize="14"
+                                                       Foreground="Black"
+                                                       FontWeight="Bold"></TextBlock>
+                                            </DataTemplate>
+                                        </GridViewColumn.HeaderTemplate>
+                                    </GridViewColumn>
+                                </GridView>
+                            </ListView.View>
+
+                            <ListView.ItemContainerStyle>
+                                <Style TargetType="ListViewItem">
+                                    <Setter Property="Height" Value="45" />
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="Transparent" />
+                                            <Setter Property="BorderThickness" Value="0" />
+                                        </Trigger>
+                                    </Style.Triggers>
+
+                                </Style>
+                            </ListView.ItemContainerStyle>
+                        </ListView>
+
+                        <ListView x:Name="lstvBatchesFixed" 
+                                      Grid.Column="1"
+                                      ItemsSource="{Binding return_data}"
+                                      ScrollViewer.ScrollChanged="lstvBatchesFixed_ScrollChanged"
+                                      ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Width="135">
+                                        <GridViewColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Chức năng"
+                                                       FontSize="14"
+                                                       Foreground="Black"
+                                                       FontWeight="Bold"></TextBlock>
+                                            </DataTemplate>
+                                        </GridViewColumn.HeaderTemplate>
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <!--<Button Style="{StaticResource SmallButtonStyle}"
+                                                                Background="#1E90FF"
+                                                                VerticalAlignment="Center"
+                                                                Margin="5">
+                                                        <Image Source="/Resource/Icons/eye.png" Width="16" Height="16"/>
+                                                    </Button>-->
+                                                    <Button Style="{StaticResource SmallButtonStyle}"
+                                                                VerticalAlignment="Center"
+                                                                Margin="5"
+                                                                Background="#00AE72"
+                                                                Click="EditBatch_Click">
+                                                        <Image Source="/Resource/Icons/edit.png" Width="16" Height="16"/>
+                                                    </Button>
+                                                    <Button Style="{StaticResource SmallButtonStyle}"
+                                                                Background="#DF0029"
+                                                                VerticalAlignment="Center"
+                                                                Margin="5"
+                                                                Click="DeleteBatch_Click">
+                                                        <Image Source="/Resource/Icons/delete.png" Width="16" Height="16"/>
+                                                    </Button>
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                </GridView>
+                            </ListView.View>
+
+                            <ListView.ItemContainerStyle>
+                                <Style TargetType="ListViewItem">
+                                    <Setter Property="Height" Value="45" />
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="Transparent" />
+                                            <Setter Property="BorderThickness" Value="0" />
+                                        </Trigger>
+                                    </Style.Triggers>
+
+                                </Style>
+                            </ListView.ItemContainerStyle>
+                        </ListView>
+                    </Grid>
+                </GroupBox>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="7*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <GroupBox Header="DANH SÁCH TÀI LIỆU"
+                        FontWeight="Bold"
+                        materialDesign:ColorZoneAssist.Background="#00AE72"
+                        materialDesign:ColorZoneAssist.Foreground="Black"
+                        materialDesign:ColorZoneAssist.Mode="Custom"
+                        BorderThickness="2" 
+                        Margin="10,10,10,10">
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5.5*"></ColumnDefinition>
+                                <ColumnDefinition Width="1.5*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <ListView x:Name="lstvDocuments" 
+                                  MouseDoubleClick="lstvDocuments_MouseDoubleClick" 
+                                  ItemsSource="{Binding return_data}"
+                                  Grid.Column="0"
+                                  ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                                  ScrollViewer.ScrollChanged="lstvDocuments_ScrollChanged">
+                                <ListView.View>
+                                    <GridView>
+                                        <GridViewColumn DisplayMemberBinding="{Binding Name}"
+                                                Width="250">
+                                            <GridViewColumn.HeaderTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="Tên tài liệu"
+                                                       FontSize="14"
+                                                       Foreground="Black"
+                                                       FontWeight="Bold"></TextBlock>
+                                                </DataTemplate>
+                                            </GridViewColumn.HeaderTemplate>
+                                        </GridViewColumn>
+                                        <GridViewColumn Width="150" 
+                                                DisplayMemberBinding="{Binding UserId}">
+                                            <GridViewColumn.HeaderTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="Người dùng"
+                                                       FontSize="14"
+                                                       Foreground="Black"
+                                                       FontWeight="Bold"></TextBlock>
+                                                </DataTemplate>
+                                            </GridViewColumn.HeaderTemplate>
+                                        </GridViewColumn>
+                                        <GridViewColumn Width="200" 
+                                                DisplayMemberBinding="{Binding AdministrativeDivision}">
+                                            <GridViewColumn.HeaderTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="Tên đơn vị"
+                                                       FontSize="14"
+                                                       Foreground="Black"
+                                                       FontWeight="Bold"></TextBlock>
+                                                </DataTemplate>
+                                            </GridViewColumn.HeaderTemplate>
+                                        </GridViewColumn>
+                                        <GridViewColumn Width="150"  
+                                                DisplayMemberBinding="{Binding DocumentNo}">
+                                            <GridViewColumn.HeaderTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="Quyển số"
+                                                       FontSize="14"
+                                                       Foreground="Black"
+                                                       FontWeight="Bold"></TextBlock>
+                                                </DataTemplate>
+                                            </GridViewColumn.HeaderTemplate>
+                                        </GridViewColumn>
+                                        <GridViewColumn Header="DocumentYear" 
+                                                DisplayMemberBinding="{Binding DocumentYear}">
+                                            <GridViewColumn.HeaderTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="Năm hồ sơ"
+                                                       FontSize="14"
+                                                       Foreground="Black"
+                                                       FontWeight="Bold"></TextBlock>
+                                                </DataTemplate>
+                                            </GridViewColumn.HeaderTemplate>
+                                        </GridViewColumn>
+                                        <GridViewColumn Header="DocumentType" 
+                                                DisplayMemberBinding="{Binding DocumentType}">
+                                            <GridViewColumn.HeaderTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="Loại tài liệu"
+                                                       FontSize="14"
+                                                       Foreground="Black"
+                                                       FontWeight="Bold"></TextBlock>
+                                                </DataTemplate>
+                                            </GridViewColumn.HeaderTemplate>
+                                        </GridViewColumn>
+                                        <GridViewColumn Header="DocScanStatus" 
+                                                DisplayMemberBinding="{Binding DocScanStatus}"
+                                                Width="200">
+                                            <GridViewColumn.HeaderTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="Trạng thái"
+                                                       FontSize="14"
+                                                       Foreground="Black"
+                                                       FontWeight="Bold"></TextBlock>
+                                                </DataTemplate>
+                                            </GridViewColumn.HeaderTemplate>
+                                        </GridViewColumn>
+                                        <GridViewColumn Header="ScannedDate" 
+                                                DisplayMemberBinding="{Binding ScannedDate}"
+                                                Width="200">
+                                            <GridViewColumn.HeaderTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="Ngày thực hiện"
+                                                       FontSize="14"
+                                                       Foreground="Black"
+                                                       FontWeight="Bold"></TextBlock>
+                                                </DataTemplate>
+                                            </GridViewColumn.HeaderTemplate>
+                                        </GridViewColumn>
+                                        <GridViewColumn Header="RenderedDate" 
+                                                DisplayMemberBinding="{Binding RenderedDate}"
+                                                Width="200">
+                                            <GridViewColumn.HeaderTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="Ngày kết xuất"
+                                                       FontSize="14"
+                                                       Foreground="Black"
+                                                       FontWeight="Bold"></TextBlock>
+                                                </DataTemplate>
+                                            </GridViewColumn.HeaderTemplate>
+                                        </GridViewColumn>
+                                        <GridViewColumn Header="ScannedImages" 
+                                                DisplayMemberBinding="{Binding ScannedImages}">
+                                            <GridViewColumn.HeaderTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="Số ảnh quét"
+                                                       FontSize="14"
+                                                       Foreground="Black"
+                                                       FontWeight="Bold"></TextBlock>
+                                                </DataTemplate>
+                                            </GridViewColumn.HeaderTemplate>
+                                        </GridViewColumn>
+                                        <GridViewColumn Width="200"
+                                                Header="Note" 
+                                                DisplayMemberBinding="{Binding Note}">
+                                            <GridViewColumn.HeaderTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="Ghi chú"
+                                                       FontSize="14"
+                                                       Foreground="Black"
+                                                       FontWeight="Bold"></TextBlock>
+                                                </DataTemplate>
+                                            </GridViewColumn.HeaderTemplate>
+                                        </GridViewColumn>
+                                        <GridViewColumn Header="DocProcessStatus" 
+                                                DisplayMemberBinding="{Binding DocProcessStatus}">
+                                            <GridViewColumn.HeaderTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="Quy trình"
+                                                       FontSize="14"
+                                                       Foreground="Black"
+                                                       FontWeight="Bold"></TextBlock>
+                                                </DataTemplate>
+                                            </GridViewColumn.HeaderTemplate>
+                                        </GridViewColumn>
+                                    </GridView>
+                                </ListView.View>
+
+                                <ListView.ItemContainerStyle>
+                                    <Style TargetType="ListViewItem">
+                                        <Setter Property="Height" Value="45" />
+                                    </Style>
+                                </ListView.ItemContainerStyle>
+                            </ListView>
+
+                            <ListView x:Name="lstvDocumentsFixed" 
+                                      Grid.Column="1"
+                                      ItemsSource="{Binding return_data}"
+                                      ScrollViewer.ScrollChanged="lstvDocumentsFixed_ScrollChanged"
+                                      ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                                <ListView.View>
+                                    <GridView>
+                                        <GridViewColumn Width="135">
+                                            <GridViewColumn.HeaderTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="Chức năng"
+                                                       FontSize="14"
+                                                       Foreground="Black"
+                                                       FontWeight="Bold"></TextBlock>
+                                                </DataTemplate>
+                                            </GridViewColumn.HeaderTemplate>
+                                            <GridViewColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <!--<Button Style="{StaticResource SmallButtonStyle}"
+                                                                Background="#1E90FF"
+                                                                VerticalAlignment="Center"
+                                                                Margin="5">
+                                                            <Image Source="/Resource/Icons/eye.png" Width="16" Height="16"/>
+                                                        </Button>-->
+                                                        <Button Style="{StaticResource SmallButtonStyle}"
+                                                                VerticalAlignment="Center"
+                                                                Margin="5"
+                                                                Background="#00AE72"
+                                                                Click="EditDocument_Click">
+                                                            <Image Source="/Resource/Icons/edit.png" Width="16" Height="16"/>
+                                                        </Button>
+                                                        <Button Style="{StaticResource SmallButtonStyle}"
+                                                                Background="#DF0029"
+                                                                VerticalAlignment="Center"
+                                                                Margin="5"
+                                                                Click="DeleteDocument_Click">
+                                                            <Image Source="/Resource/Icons/delete.png" Width="16" Height="16"/>
+                                                        </Button>
+                                                    </StackPanel>
+                                                </DataTemplate>
+                                            </GridViewColumn.CellTemplate>
+                                        </GridViewColumn>
+                                    </GridView>
+                                </ListView.View>
+
+                                <ListView.ItemContainerStyle>
+                                    <Style TargetType="ListViewItem">
+                                        <Setter Property="Height" Value="45" />
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="Transparent" />
+                                                <Setter Property="BorderThickness" Value="0" />
+                                            </Trigger>
+                                        </Style.Triggers>
+
+                                    </Style>
+                                </ListView.ItemContainerStyle>
+                            </ListView>
+                        </Grid>
+
+                    </GroupBox>
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <Button Content="Hoàn thành quét" 
+                            x:Name="btnTest1"
+                            HorizontalAlignment="Left" 
+                            Margin="730,15,0,0" 
+                            VerticalAlignment="Top"
+                            Style="{StaticResource ButtonStyle}" 
+                            Width="150"
+                            Click="btnFinishScan_Click"/>
+
+                    <Button Content="Tạo mới tài liệu" 
+                            HorizontalAlignment="Left"
+                            Margin="570,15,0,0" 
+                            VerticalAlignment="Top"
+                            Style="{StaticResource ButtonStyle}" 
+                            Width="150"
+                            Click="CreateDocument_Click"/>
+
+                    <Label Content="Gói hiện tại:" 
+                           HorizontalAlignment="Left" 
+                           Margin="10,19,0,0" 
+                           VerticalAlignment="Top"
+                           FontSize="14"
+                           FontWeight="Bold"/>
+
+                    <TextBox x:Name="txtCurrentBatch"
+                             HorizontalAlignment="Left" 
+                             Margin="102,15,0,0" 
+                             TextWrapping="Wrap" 
+                             VerticalAlignment="Top" 
+                             Width="150"
+                             Height="35"
+                             IsEnabled="False"/>
+
+                    <Label Content="Tài liệu hiện tại:" 
+                        HorizontalAlignment="Left" 
+                        Margin="279,19,0,0" 
+                        VerticalAlignment="Top"
+                        FontSize="14"
+                        FontWeight="Bold"/>
+
+                    <TextBox x:Name="txtCurrentDocument"
+                             HorizontalAlignment="Left" 
+                             Margin="395,15,0,0" 
+                             TextWrapping="Wrap" 
+                             VerticalAlignment="Top" 
+                             Width="150"
+                             Height="35"
+                             IsEnabled="False"/>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window> 

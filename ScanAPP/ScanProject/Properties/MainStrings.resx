@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Contact" xml:space="preserve">
+    <value>Liên hệ</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Thoát</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>Danh mục</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Trợ giúp</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>PHÂN HỆ GIÁM SÁT HẬU KIỂM - Version: 3.1.1.20170410</value>
+  </data>
+  <data name="ConnectionStatus" xml:space="preserve">
+    <value>Trạng thái kết nối</value>
+  </data>
+  <data name="DeviceStatus" xml:space="preserve">
+    <value>Cập nhật trạng thái thiết bị</value>
+  </data>
+  <data name="Monitor" xml:space="preserve">
+    <value>        Giám sát                       </value>
+  </data>
+  <data name="Monitor_Header" xml:space="preserve">
+    <value>Giám sát</value>
+  </data>
+  <data name="Postcheck_Header" xml:space="preserve">
+    <value>Hậu kiểm</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>Thống kê</value>
+  </data>
+  <data name="RPT_ListVehicle" xml:space="preserve">
+    <value>Hậu kiểm xe giao dịch bằng thẻ lượt</value>
+  </data>
+  <data name="RPT_PostcheckResult" xml:space="preserve">
+    <value>Thống kê kết quả hậu kiểm</value>
+  </data>
+  <data name="RPT_ProdQuantity" xml:space="preserve">
+    <value>Thống kê số lượng hàng hóa</value>
+  </data>
+  <data name="RPT_Revenue" xml:space="preserve">
+    <value>Thống kê doanh thu</value>
+  </data>
+  <data name="RPT_Route" xml:space="preserve">
+    <value>Thống kê theo lộ trình</value>
+  </data>
+  <data name="RPT_Turn" xml:space="preserve">
+    <value>Thống kê các lượt xe qua làn</value>
+  </data>
+  <data name="VehicleManagement" xml:space="preserve">
+    <value>   Quản lý     phương tiện </value>
+  </data>
+  <data name="About_Title" xml:space="preserve">
+    <value>Liên hệ</value>
+  </data>
+  <data name="Config" xml:space="preserve">
+    <value>Cấu hình</value>
+  </data>
+  <data name="Config_Title" xml:space="preserve">
+    <value>Cấu hình</value>
+  </data>
+  <data name="List_Title" xml:space="preserve">
+    <value>Quản lý danh mục</value>
+  </data>
+  <data name="NotConfig" xml:space="preserve">
+    <value>Chưa cấu hình !</value>
+  </data>
+  <data name="RPT_Traffic" xml:space="preserve">
+    <value>Thống kê lưu lượng xe qua làn</value>
+  </data>
+  <data name="Server" xml:space="preserve">
+    <value>Máy chủ</value>
+  </data>
+  <data name="Supervision_Title" xml:space="preserve">
+    <value>Giám sát</value>
+  </data>
+  <data name="Vehicle_Title" xml:space="preserve">
+    <value>Quản lý phương tiện</value>
+  </data>
+  <data name="Flash_RetriveConfigInfo" xml:space="preserve">
+    <value>Đang kiểm tra thông tin cấu hình và kết nối CSDL ...</value>
+  </data>
+  <data name="Flash_Title" xml:space="preserve">
+    <value>PHÂN HỆ GIÁM SÁT HẬU KIỂM</value>
+  </data>
+  <data name="ConfirmShutdown" xml:space="preserve">
+    <value>Bạn có muốn thoát khỏi chương trình không ?</value>
+  </data>
+  <data name="ConfirmShutdown_Caption" xml:space="preserve">
+    <value>Thoát</value>
+  </data>
+  <data name="DateTimeFormat" xml:space="preserve">
+    <value>dd-MM-yyyy HH:mm:ss</value>
+  </data>
+  <data name="Status_Employee" xml:space="preserve">
+    <value>Nhân viên: {0} </value>
+  </data>
+  <data name="Accesskey_D" xml:space="preserve">
+    <value>_D</value>
+  </data>
+  <data name="Login_Exit" xml:space="preserve">
+    <value>_Thoát</value>
+  </data>
+  <data name="Login_OK" xml:space="preserve">
+    <value>_Đăng nhập</value>
+  </data>
+  <data name="Login_Password" xml:space="preserve">
+    <value>_Mật khẩu</value>
+  </data>
+  <data name="Login_Shift" xml:space="preserve">
+    <value>_Ca</value>
+  </data>
+  <data name="Login_Username" xml:space="preserve">
+    <value>_Người dùng</value>
+  </data>
+  <data name="Title_UpdateManagement" xml:space="preserve">
+    <value>Cập nhật cơ sở dữ liệu chuẩn</value>
+  </data>
+  <data name="Title_UpdateSatand" xml:space="preserve">
+    <value>Cập nhật cơ sở dữ liệu đăng kiểm</value>
+  </data>
+  <data name="RPTPostCheck" xml:space="preserve">
+    <value>Hậu kiểm</value>
+  </data>
+  <data name="RPT_ListVehicleDetail" xml:space="preserve">
+    <value>Chi tiết hậu kiểm xe giao dịch bằng thẻ lượt</value>
+  </data>
+  <data name="RPT_ProdQuantityActive" xml:space="preserve">
+    <value>Thống kê số lượng hàng hóa lưu hành</value>
+  </data>
+  <data name="RPT_ProdQuantityExist" xml:space="preserve">
+    <value>Thống kê số lượng hàng hóa</value>
+  </data>
+  <data name="Login_UsernamePasswordIncorrect" xml:space="preserve">
+    <value>Tên người dùng hay mật khẩu không đúng !</value>
+  </data>
+  <data name="Login_UsernamePasswordIncorrect_Caption" xml:space="preserve">
+    <value>Đăng nhập</value>
+  </data>
+  <data name="DeviceManagementTransaction_title" xml:space="preserve">
+    <value>Tìm thông tin giao dịch thiết bị</value>
+  </data>
+  <data name="DeviceManagement_Title" xml:space="preserve">
+    <value>Cập nhật hiệu lực thiết bị</value>
+  </data>
+  <data name="DeviceEffect_Title" xml:space="preserve">
+    <value>Cập nhật trạng thái thiết bị</value>
+  </data>
+  <data name="DeviceTrasaction_Title" xml:space="preserve">
+    <value>Tìm thông tin giao dịch thiết bị</value>
+  </data>
+  <data name="PostCheckCounter" xml:space="preserve">
+    <value>Hậu kiểm vé lượt</value>
+  </data>
+  <data name="PostCheckCounterDecuted" xml:space="preserve">
+    <value>Hậu kiểm vé lượt trừ dần</value>
+  </data>
+  <data name="PostCheckCounterLane" xml:space="preserve">
+    <value>Hậu kiểm các lượt xe qua làn</value>
+  </data>
+  <data name="PostCheckIsforce" xml:space="preserve">
+    <value>Hậu kiểm xe ưu tiên</value>
+  </data>
+  <data name="PostCheckPeriod" xml:space="preserve">
+    <value>Hậu kiểm vé có thời hạn</value>
+  </data>
+  <data name="btnLoginConfig" xml:space="preserve">
+    <value>Cấ_u hình</value>
+  </data>
+  <data name="menuChangePassword" xml:space="preserve">
+    <value>Đổi mật khẩu</value>
+  </data>
+  <data name="menuLogin" xml:space="preserve">
+    <value>Đăng nhập</value>
+  </data>
+  <data name="menuLogout" xml:space="preserve">
+    <value>Đăng xuất</value>
+  </data>
+  <data name="PostCheckCountTurnVehicleOverLane" xml:space="preserve">
+    <value>Hậu kiểm các lượt xe qua làn</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Thay đổi mật khẩu</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Th_oát</value>
+  </data>
+  <data name="btnChangePassword" xml:space="preserve">
+    <value>Đổi mật khẩu</value>
+  </data>
+  <data name="Login_ConfirmPasswordIncorrect" xml:space="preserve">
+    <value>Xác nhận mật khẩu không trùng với mật khẩu mới !</value>
+  </data>
+  <data name="Login_CurrentPasswordIncorrect" xml:space="preserve">
+    <value>Mật khẩu hiện tại không đúng !</value>
+  </data>
+  <data name="msgAdminPasswordIncorrect" xml:space="preserve">
+    <value>Mật khẩu admin không đúng\nVui lòng nhập lại mật khẩu !</value>
+  </data>
+  <data name="SupervisionRevenueReportChart" xml:space="preserve">
+    <value>Thống kê doanh thu dạng biểu đồ</value>
+  </data>
+  <data name="SupervisionRevenueReportTable" xml:space="preserve">
+    <value>Thống kê doanh thu dạng bảng</value>
+  </data>
+  <data name="SupervisionTrafficReportChart" xml:space="preserve">
+    <value>Thống kê lưu lượng xe qua làn dạng biểu đồ</value>
+  </data>
+  <data name="SupervisionTrafficReportTable" xml:space="preserve">
+    <value>Thống kê lưu lượng xe qua làn dạng bảng</value>
+  </data>
+  <data name="InfomationNotSecurityShowViewReport" xml:space="preserve">
+    <value>Bạn không có quyền xem báo cáo hay quyền xem báo cáo của bạn đã bị hủy cho chức năng {0}. Xin vui lòng liên hệ quản trị viên !</value>
+  </data>
+</root>

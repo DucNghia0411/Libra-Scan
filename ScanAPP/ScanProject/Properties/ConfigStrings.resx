@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Database_FirstServername" xml:space="preserve">
+    <value>Tên server</value>
+  </data>
+  <data name="Database_FirstDatabasename" xml:space="preserve">
+    <value>Tên cơ sở dữ liệu</value>
+  </data>
+  <data name="Database_FirstUsername" xml:space="preserve">
+    <value>Tên người dùng</value>
+  </data>
+  <data name="Database_FirstPassword" xml:space="preserve">
+    <value>Mật khẩu</value>
+  </data>
+  <data name="Database_FirstTimeout" xml:space="preserve">
+    <value>Thời gian kết nối</value>
+  </data>
+  <data name="Database_SecondServername" xml:space="preserve">
+    <value>Tên server</value>
+  </data>
+  <data name="Database_SecondDatabasename" xml:space="preserve">
+    <value>Tên cơ sở dữ liệu</value>
+  </data>
+  <data name="Database_SecondUsername" xml:space="preserve">
+    <value>Tên người dùng</value>
+  </data>
+  <data name="Database_SecondPassword" xml:space="preserve">
+    <value>Mật khẩu</value>
+  </data>
+  <data name="Database_SecondTimeout" xml:space="preserve">
+    <value>Thời gian kết nối</value>
+  </data>
+  <data name="Database_GroupServer1" xml:space="preserve">
+    <value>Server 1</value>
+  </data>
+  <data name="Database_GroupServer2" xml:space="preserve">
+    <value>Server 2</value>
+  </data>
+  <data name="Database_GroupPriority" xml:space="preserve">
+    <value>Độ ưu tiên</value>
+  </data>
+  <data name="Database_FirstPriority" xml:space="preserve">
+    <value>Server 1</value>
+  </data>
+  <data name="Database_SecondPriority" xml:space="preserve">
+    <value>Server 2</value>
+  </data>
+  <data name="Backup" xml:space="preserve">
+    <value>_Sao lưu</value>
+  </data>
+  <data name="Backup_Restore_ListItem" xml:space="preserve">
+    <value>Sao lưu và phục hồi</value>
+  </data>
+  <data name="Database_ListItem" xml:space="preserve">
+    <value>Thông tin kết nối</value>
+  </data>
+  <data name="Database_TestConnection" xml:space="preserve">
+    <value>_Kiểm tra kết nối</value>
+  </data>
+  <data name="Folder_ColorImage" xml:space="preserve">
+    <value>Hình màu</value>
+  </data>
+  <data name="Folder_FileType" xml:space="preserve">
+    <value>Loại tập tin</value>
+  </data>
+  <data name="Folder_Group" xml:space="preserve">
+    <value>Cấu hình đường dẫn lưu hình</value>
+  </data>
+  <data name="Folder_ListItem" xml:space="preserve">
+    <value>Thư mục lưu trữ và giao dịch</value>
+  </data>
+  <data name="Folder_RecogImage" xml:space="preserve">
+    <value>Hình nhận dạng</value>
+  </data>
+  <data name="Folder_StandardImage" xml:space="preserve">
+    <value>Hình chuẩn</value>
+  </data>
+  <data name="Monitor_CenterMode" xml:space="preserve">
+    <value>Cài đặt tại trung tâm</value>
+  </data>
+  <data name="Monitor_GroupMode" xml:space="preserve">
+    <value>Cài đặt</value>
+  </data>
+  <data name="Monitor_LaneNum" xml:space="preserve">
+    <value>Số làn</value>
+  </data>
+  <data name="Monitor_ListItem" xml:space="preserve">
+    <value>Màn hình giám sát</value>
+  </data>
+  <data name="Monitor_MonitorGroup" xml:space="preserve">
+    <value>Màn hình giám sát</value>
+  </data>
+  <data name="Monitor_Station" xml:space="preserve">
+    <value>Trạm quản lý</value>
+  </data>
+  <data name="Monitor_StationMode" xml:space="preserve">
+    <value>Cài đặt tại trạm</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>_Phục hồi</value>
+  </data>
+  <data name="Security_ConfirmNewPassword" xml:space="preserve">
+    <value>Xác nhận mật khẩu</value>
+  </data>
+  <data name="Security_CurrentPassword" xml:space="preserve">
+    <value>Mật khẩu hiện tại</value>
+  </data>
+  <data name="Authen_Group" xml:space="preserve">
+    <value>Thay đổi mật khẩu cấu hình</value>
+  </data>
+  <data name="Security_IsSecurity" xml:space="preserve">
+    <value>Sử dụng bảo mật</value>
+  </data>
+  <data name="Security_ListItem" xml:space="preserve">
+    <value>Bảo mật</value>
+  </data>
+  <data name="Security_NewPassword" xml:space="preserve">
+    <value>Mật khẩu mới</value>
+  </data>
+  <data name="ConfirmPasswordNotMatch" xml:space="preserve">
+    <value>Xác nhận mật khẩu không trùng với mật khẩu mới !</value>
+  </data>
+  <data name="CurrentPasswordWrong" xml:space="preserve">
+    <value>Mật khẩu hiện tại không đúng !</value>
+  </data>
+  <data name="ColorPathNotExist" xml:space="preserve">
+    <value>Thư mục chứa hình màu không tồn tại !</value>
+  </data>
+  <data name="RecogPathNotExist" xml:space="preserve">
+    <value>Thư mục chứa hình nhận dạng không tồn tại !</value>
+  </data>
+  <data name="StandardPathNotExist" xml:space="preserve">
+    <value>Thư mục chứa hình chuẩn không tồn tại !</value>
+  </data>
+  <data name="PathNotExist_Caption" xml:space="preserve">
+    <value>Thư mục lưu trữ</value>
+  </data>
+  <data name="SaveConfig" xml:space="preserve">
+    <value>Bạn có muốn lưu lại cấu hình đã thay đổi không?</value>
+  </data>
+  <data name="Config_Caption" xml:space="preserve">
+    <value>Cấu hình</value>
+  </data>
+  <data name="ConnectDBNotSuccessful" xml:space="preserve">
+    <value>Không thể kết nối với CSDL !</value>
+  </data>
+  <data name="ConnectDBSuccessful" xml:space="preserve">
+    <value>Kết nối với cơ sở dữ liệu thành công !</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>_Đóng</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>_Lưu</value>
+  </data>
+  <data name="UI_Close_ShortKey" xml:space="preserve">
+    <value>_D</value>
+  </data>
+  <data name="ConfigFileError" xml:space="preserve">
+    <value>Tập tin cấu hình bị lỗi !</value>
+  </data>
+  <data name="Security_Group" xml:space="preserve">
+    <value>Cấu hình bảo mật</value>
+  </data>
+  <data name="Backup_Successful" xml:space="preserve">
+    <value>Sao lưu thành công thành công !</value>
+  </data>
+  <data name="Backup_Unsuccessful" xml:space="preserve">
+    <value>Sao lưu không thành công thành công !</value>
+  </data>
+  <data name="Security_Mode" xml:space="preserve">
+    <value>Chế độ bảo mật</value>
+  </data>
+  <data name="Security_Url1" xml:space="preserve">
+    <value>Online URL</value>
+  </data>
+  <data name="Security_Url2" xml:space="preserve">
+    <value>Offline URL</value>
+  </data>
+  <data name="NonRealtime" xml:space="preserve">
+    <value>Non Real-time</value>
+  </data>
+  <data name="Realtime" xml:space="preserve">
+    <value>Real-time</value>
+  </data>
+  <data name="Security_OnlinePort" xml:space="preserve">
+    <value>Online HTTP Port</value>
+  </data>
+</root>

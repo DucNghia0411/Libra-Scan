@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectView>ShowAllFiles</ProjectView>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Views\AddCatalogIndexWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AdjustBrightnessContrastWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AdjustHueSaturationWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\BatchUpdateWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CropImageWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CropPartOfImageWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\DocumentCreateWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\DocumentManagerWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\DocumentTypeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ImportDataByFileWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\LoadSessionWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\LoginWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\MergeImageWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PortConfigWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ScanSettingManagerWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\SftpConfigWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ViewImageWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\AddCatalogIndexWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AdjustBrightnessContrastWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AdjustHueSaturationWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\BatchUpdateWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CropImageWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CropPartOfImageWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\DocumentCreateWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\DocumentManagerWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\DocumentTypeWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ImportDataByFileWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\LoadSessionWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MergeImageWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PortConfigWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ScanSettingManagerWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SftpConfigWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewImageWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

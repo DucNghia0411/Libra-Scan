@@ -1,0 +1,122 @@
+﻿<Window x:Class="ScanProject.Views.PortConfigWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:ScanProject.Views"
+        mc:Ignorable="d"
+        Title="PortConfigWindow" Height="300" Width="550"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Window.Resources>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#00AE72" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="BorderThickness" Value="2" />
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="Width" Value="80" />
+            <Setter Property="Height" Value="35" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <GroupBox Grid.Row="0"
+                Margin="10,10,10,10"
+                materialDesign:ColorZoneAssist.Background="#00AE72"
+                materialDesign:ColorZoneAssist.Foreground="Black"
+                materialDesign:ColorZoneAssist.Mode="Custom"
+                Header="CẤU HÌNH ĐƯỜNG DẪN" 
+                FontWeight="Bold"
+                BorderThickness="2">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <DockPanel VerticalAlignment="Center"
+                               HorizontalAlignment="Center">
+                        <Border BorderBrush="Black" BorderThickness="1" Height="30">
+                            <ComboBox x:Name="cboScheme" Width="100"
+                                  Height="30">
+                            </ComboBox>
+                        </Border>
+                        <Label Width="20" VerticalAlignment="Center"
+                               Margin="5,5,5,5">:</Label>
+                        <Border BorderBrush="Black" BorderThickness="1" Height="30">
+                            <TextBox x:Name="txtHostName" Width="200"
+                                 Height="30">
+                            </TextBox>
+                        </Border>
+                        <Label Width="20" VerticalAlignment="Center"
+                               Margin="5,5,5,5">:</Label>
+                        <Border BorderBrush="Black" BorderThickness="1" Height="30">
+                            <TextBox x:Name="txtPort" Width="50"
+                                 Height="30">
+                            </TextBox>
+                        </Border>
+                        <CheckBox x:Name="chkHasPort"
+                                  Width="20"
+                                  Margin="5,5,5,5"
+                                  Checked="chkHasPort_Checked"
+                                  Unchecked="chkHasPort_Unchecked"></CheckBox>
+                        <Button x:Name="btnAdd"
+                                Width="30"
+                                Height="30"
+                                Style="{StaticResource ButtonStyle}"
+                                Margin="10,10,10,10">
+                            +
+                        </Button>
+                    </DockPanel>
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <StackPanel>
+                        <Label FontSize="12"
+                               FontWeight="Bold">Danh sách:</Label>
+                        <Border BorderBrush="Black" BorderThickness="1">
+                            <ComboBox x:Name="cboList" Height="35" 
+                                SelectionChanged="cboListUrl_SelectionChanged"></ComboBox>
+                        </Border>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </GroupBox>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="4*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0" VerticalAlignment="Center">
+                <StackPanel Margin="10,0,0,0">
+                    <Label FontSize="12"
+                           FontWeight="Bold">Đường dẫn hiện tại:</Label>
+                    <TextBox x:Name="txtCurrent" IsEnabled="False"></TextBox>
+                </StackPanel>
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <DockPanel VerticalAlignment="Center"
+                           HorizontalAlignment="Right">
+                    <Button x:Name="btnCheck" Style="{StaticResource ButtonStyle}"
+                            Margin="10,10,10,10">Kiểm tra</Button>
+                    <Button x:Name="btnSave" Style="{StaticResource ButtonStyle}"
+                            Margin="10,10,10,10">Lưu</Button>
+                    <Button x:Name="btnClose" Style="{StaticResource ButtonStyle}"
+                            Margin="10,10,10,10"
+                            Background="Red">Đóng</Button>
+                </DockPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Chart_Sunday" xml:space="preserve">
+    <value>Chủ nhật</value>
+  </data>
+  <data name="Export_Complete" xml:space="preserve">
+    <value>Tập tin màn hình đã được  lưu thành công. Bạn có muốn xem tập tin đã xuất ?</value>
+  </data>
+  <data name="Export_PDF_Filter" xml:space="preserve">
+    <value>Report Document(.pdf)|*.pdf</value>
+  </data>
+  <data name="Export_PDF_Title" xml:space="preserve">
+    <value>Thông báo</value>
+  </data>
+  <data name="Export_UnSuccessful" xml:space="preserve">
+    <value>Xuất file thất bại !</value>
+  </data>
+  <data name="Message_Error_FromDate_MustBeLessThan_ToDate" xml:space="preserve">
+    <value>Ngày bắt đầu phải nhỏ hơn ngày kết thúc !</value>
+  </data>
+  <data name="Message_Error_Time_MustBeLessThan_Now" xml:space="preserve">
+    <value>Thời điểm thống kê phải trước ngày hiện tại </value>
+  </data>
+  <data name="Message_Error_Time_TooSmall" xml:space="preserve">
+    <value>Thời điểm thống kê quá nhỏ so với thực tế !</value>
+  </data>
+  <data name="Message_Error_Week_Invalid" xml:space="preserve">
+    <value>Giá trị tuần không hợp lệ !</value>
+  </data>
+  <data name="Message_NotData" xml:space="preserve">
+    <value>Không có dữ liệu cho thống kê này !</value>
+  </data>
+  <data name="Message_NotData_4Printing" xml:space="preserve">
+    <value>Không có dữ liệu cho thống kê này. Bạn không thể in được !</value>
+  </data>
+  <data name="Report_Address_P" xml:space="preserve">
+    <value>Địa chỉ: {0}</value>
+  </data>
+  <data name="Report_CompanyName_P" xml:space="preserve">
+    <value>Tên công ty: {0}</value>
+  </data>
+  <data name="Report_Date" xml:space="preserve">
+    <value>(Ngày)</value>
+  </data>
+  <data name="Report_DateAndShift_P" xml:space="preserve">
+    <value>Ngày {0} - Ca {1}</value>
+  </data>
+  <data name="Report_Day" xml:space="preserve">
+    <value>(Làn)</value>
+  </data>
+  <data name="Report_DoanhThu_Title_P" xml:space="preserve">
+    <value>THỐNG KÊ DOANH THU\n{0}</value>
+  </data>
+  <data name="Report_Email_P" xml:space="preserve">
+    <value>Email: {0}</value>
+  </data>
+  <data name="Report_Fax_P" xml:space="preserve">
+    <value>Fax: {0}</value>
+  </data>
+  <data name="Report_FromTimeToNow_P" xml:space="preserve">
+    <value>Từ {0} đến nay</value>
+  </data>
+  <data name="Report_FromTimeToTime_P" xml:space="preserve">
+    <value>Từ  {0} đến {1}</value>
+  </data>
+  <data name="Report_goods" xml:space="preserve">
+    <value>THỐNG KÊ SỐ LƯỢNG HÀNG HÓA\n{0}</value>
+  </data>
+  <data name="Report_LuotXe" xml:space="preserve">
+    <value>(Lượt xe)</value>
+  </data>
+  <data name="Report_Month" xml:space="preserve">
+    <value>(Tháng)</value>
+  </data>
+  <data name="Report_PrintTime_Format" xml:space="preserve">
+    <value>dd/MM/yyyy HH:mm</value>
+  </data>
+  <data name="Report_SummaryAt" xml:space="preserve">
+    <value>Thống kê lúc {0}</value>
+  </data>
+  <data name="Report_TaxCode_P" xml:space="preserve">
+    <value>TaxCode: {0}</value>
+  </data>
+  <data name="Report_Telephone_P" xml:space="preserve">
+    <value>Điện thoại: {0}</value>
+  </data>
+  <data name="Report_Title_Time_DayMonth_P" xml:space="preserve">
+    <value>Tháng {0} năm {1}</value>
+  </data>
+  <data name="Report_Title_Time_DayWeek_P" xml:space="preserve">
+    <value>Ngày {0} tháng {1} năm {2}</value>
+  </data>
+  <data name="Report_Title_Time_MonthYear_P" xml:space="preserve">
+    <value>Năm {0}</value>
+  </data>
+  <data name="Report_Title_Time_QuaterYear_P" xml:space="preserve">
+    <value>Quí {0} năm {1}</value>
+  </data>
+  <data name="Report_TotalGoods" xml:space="preserve">
+    <value>Tổng lượng hàng hóa</value>
+  </data>
+  <data name="Report_TotalMoney" xml:space="preserve">
+    <value>Tổng tiền</value>
+  </data>
+  <data name="Report_TrieuDong" xml:space="preserve">
+    <value>(đồng)</value>
+  </data>
+  <data name="Report_Website_P" xml:space="preserve">
+    <value>Website: {0}</value>
+  </data>
+  <data name="Report_XeQuaLan_Title_P" xml:space="preserve">
+    <value>THỐNG KÊ LƯU LƯỢNG XE QUA LÀN \n{0}</value>
+  </data>
+  <data name="SQL_MINDATE" xml:space="preserve">
+    <value>19000101</value>
+  </data>
+  <data name="UI_Close" xml:space="preserve">
+    <value>Th_oát</value>
+  </data>
+  <data name="UI_Close_ShortKey" xml:space="preserve">
+    <value>_o</value>
+  </data>
+  <data name="UI_Date" xml:space="preserve">
+    <value>Ngày</value>
+  </data>
+  <data name="UI_DateAndShift" xml:space="preserve">
+    <value>Ngày ca</value>
+  </data>
+  <data name="UI_FromDate" xml:space="preserve">
+    <value>Từ ngày</value>
+  </data>
+  <data name="UI_Month" xml:space="preserve">
+    <value>Tháng</value>
+  </data>
+  <data name="UI_Online" xml:space="preserve">
+    <value>Trực tuyến</value>
+  </data>
+  <data name="UI_PrintReport" xml:space="preserve">
+    <value>_In báo cáo</value>
+  </data>
+  <data name="UI_QuarterYear" xml:space="preserve">
+    <value>Quí</value>
+  </data>
+  <data name="UI_Shift" xml:space="preserve">
+    <value>Ca</value>
+  </data>
+  <data name="UI_Station" xml:space="preserve">
+    <value>Trạm</value>
+  </data>
+  <data name="UI_Summary" xml:space="preserve">
+    <value>_Thống kê</value>
+  </data>
+  <data name="UI_Time" xml:space="preserve">
+    <value>Thời gian</value>
+  </data>
+  <data name="UI_Time4Update" xml:space="preserve">
+    <value>Thời gian cập nhật</value>
+  </data>
+  <data name="UI_ToDate" xml:space="preserve">
+    <value>Đến ngày</value>
+  </data>
+  <data name="UI_Week" xml:space="preserve">
+    <value>Tuần</value>
+  </data>
+  <data name="UI_Year" xml:space="preserve">
+    <value>Năm</value>
+  </data>
+  <data name="Log_Report_ExportPDF_Fail" xml:space="preserve">
+    <value>Export PDF Fail</value>
+  </data>
+  <data name="Message_warning_print_report" xml:space="preserve">
+    <value>Vui lòng chọn thống kê trước khi xem in báo cáo !</value>
+  </data>
+  <data name="UI_NotConfigurationStationID" xml:space="preserve">
+    <value>Vui lòng cấu hình trạm trước khi chọn thống kê !</value>
+  </data>
+  <data name="Report_DateThanOrEqual4" xml:space="preserve">
+    <value>Dữ liệu ngày tháng sai.\n Xin vui lòng kiểm tra lại !</value>
+  </data>
+  <data name="Report_NotDataFromDate" xml:space="preserve">
+    <value>Vui lòng chọn ngày bắt đầu thống kê !</value>
+  </data>
+  <data name="Report_FormatFromDateWrong" xml:space="preserve">
+    <value>Định dạng ngày tháng bắt đầu sai !</value>
+  </data>
+  <data name="Report_NotDataToDate" xml:space="preserve">
+    <value>Vui lòng chọn ngày kết thúc thống kê !</value>
+  </data>
+  <data name="Report_FormatToDateWrong" xml:space="preserve">
+    <value>Định dạng ngày tháng kết thúc thống kê sai !</value>
+  </data>
+  <data name="Report_NotDataToDayShift" xml:space="preserve">
+    <value>Vui lòng chọn ngày thống kê theo ca !</value>
+  </data>
+  <data name="Log_Report_Export_Fail" xml:space="preserve">
+    <value>Export Report Fail</value>
+  </data>
+  <data name="Report_UnSuccessful" xml:space="preserve">
+    <value>Xem báo cáo không thành công !</value>
+  </data>
+  <data name="UI_ShowReport" xml:space="preserve">
+    <value>_Xem báo cáo</value>
+  </data>
+  <data name="Message_Error_FromTime_MustBeLessThan_ToTime" xml:space="preserve">
+    <value>Giờ bắt đầu phải nhỏ hơn giờ kết thúc !</value>
+  </data>
+  <data name="ExportExcel_Successful" xml:space="preserve">
+    <value>Tập tin excel đã được xuất thành công. Bạn có muốn xem tập tin đã xuất ?</value>
+  </data>
+  <data name="Message_Error_Time_MustBeLessThan_Now_Time" xml:space="preserve">
+    <value>{0} bắt đâu phải nhỏ hơn ngày kết thúc !</value>
+  </data>
+  <data name="TrafficVehicleLane" xml:space="preserve">
+    <value>Lưu lượng xe qua làn</value>
+  </data>
+  <data name="Message_Error_Time" xml:space="preserve">
+    <value>Thời điểm thống kê phải trước giờ hiện tại !</value>
+  </data>
+  <data name="Message_Save_NotSuccess" xml:space="preserve">
+    <value>Lưu không thành công</value>
+  </data>
+  <data name="Message_Save_Success" xml:space="preserve">
+    <value>Lưu thành công</value>
+  </data>
+</root>

@@ -1,0 +1,45 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style 
+        x:Key="miniButton" TargetType="Button">
+        <Setter Property="Margin" Value="0,1,0,0" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="DockPanel.Dock" Value="Right" />
+        <Setter Property="Focusable" Value="False" />
+        <Setter Property="Height" Value="16" />
+        <Setter Property="Width" Value="16" />
+        <Setter Property="HorizontalContentAlignment"  Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+    </Style>
+
+    <DataTemplate x:Key="ClosableTabItemTemplate" >
+        <StackPanel  Height="20"  HorizontalAlignment="Left" Orientation="Horizontal" VerticalAlignment="top">
+            <StackPanel Height="20">
+                <Label   Content="{Binding Path=Title}" HorizontalAlignment="Center" VerticalAlignment="Top"  />
+                <TextBlock Text="" />
+            </StackPanel>
+            <Button  HorizontalAlignment="Center" VerticalAlignment="Top"
+                Style="{StaticResource miniButton}"
+                ToolTip="Đóng" IsTabStop="False" 
+                Command="{Binding Path=CloseCommand}">
+                <Button.Content>
+                    <Image Source="/Supervision;component\Shared\Images\smallclose.png" Width="16" Height="16" HorizontalAlignment="Center"/>
+                </Button.Content>
+            </Button>
+        </StackPanel>
+    </DataTemplate>
+    <DataTemplate 
+        x:Key="WorkspacesTemplate">
+        <TabControl 
+            x:Name="tbViews" 
+            IsSynchronizedWithCurrentItem="True" 
+            ItemsSource="{Binding}"
+            ItemTemplate="{StaticResource ClosableTabItemTemplate}" />
+    </DataTemplate>
+</ResourceDictionary>

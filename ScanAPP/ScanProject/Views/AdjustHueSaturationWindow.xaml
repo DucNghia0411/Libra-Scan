@@ -1,0 +1,128 @@
+﻿<Window x:Class="ScanProject.Views.AdjustHueSaturationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScanProject.Views"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="AdjustHueSaturationWindow" Height="700" Width="500"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#00AE72" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="BorderThickness" Value="2" />
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="Width" Value="100" />
+            <Setter Property="Height" Value="35" />
+        </Style>
+
+        <Style x:Key="FontText" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <GroupBox Header="KHU VỰC CHỈNH SỬA"
+                    FontWeight="Bold"
+                    materialDesign:ColorZoneAssist.Background="#00AE72"
+                    materialDesign:ColorZoneAssist.Foreground="Black"
+                    materialDesign:ColorZoneAssist.Mode="Custom"
+                    BorderThickness="2" 
+                    Margin="5,5,5,5">
+                <Grid  Background="LightGray">
+                    <Image x:Name="imgAdjust" Height="400" Width="400"></Image>
+                </Grid>
+            </GroupBox>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" 
+                            HorizontalAlignment="Center" 
+                            Margin="10">
+                    <TextBlock Text="Màu sắc:" 
+                               Style="{StaticResource FontText}"
+                               VerticalAlignment="Center" 
+                               Margin="5"
+                               Width="110"/>
+                    <Slider Name="HueSlider" 
+                            Style="{x:Null}" 
+                            Minimum="-1000" 
+                            Maximum="1000" 
+                            Value="0" 
+                            TickFrequency="1" 
+                            TickPlacement="BottomRight" 
+                            Width="200" 
+                            IsSnapToTickEnabled="True"/>
+                    <Border BorderBrush="Black" BorderThickness="1">
+                        <TextBlock Text="0" 
+                               Name="HueValueLabel" 
+                               VerticalAlignment="Center" 
+                               Margin="5" 
+                               Width="50"
+                               TextAlignment="Center"/>
+                    </Border>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" 
+                            HorizontalAlignment="Center" 
+                            Margin="10">
+                    <TextBlock Text="Độ bão hòa:" 
+                               Style="{StaticResource FontText}"
+                               VerticalAlignment="Center" 
+                               Margin="5"
+                               Width="110"/>
+                    <Slider Name="SaturationSlider" 
+                            Style="{x:Null}" 
+                            Minimum="-1000" 
+                            Maximum="1000" 
+                            Value="0" 
+                            TickFrequency="1" 
+                            TickPlacement="BottomRight"
+                            Width="200"  
+                            IsSnapToTickEnabled="True"/>
+                    <Border BorderBrush="Black" BorderThickness="1">
+                        <TextBlock Text="0" 
+                               Name="SaturationValueLabel" 
+                               VerticalAlignment="Center" 
+                               Margin="5" 
+                               Width="50"
+                               TextAlignment="Center"/>
+                    </Border>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                <Button Width="100" HorizontalAlignment="Left" Margin="10"
+                        Style="{StaticResource ButtonStyle}"
+                        Click="Revert_Click">Hoàn tác</Button>
+            </StackPanel>
+            <DockPanel Grid.Column="1" VerticalAlignment="Center">
+                <Button Width="100" HorizontalAlignment="Right" Margin="10"
+                        Style="{StaticResource ButtonStyle}"
+                        Click="SaveAdjustedImageButton_Click">Lưu</Button>
+                <Button Width="100" HorizontalAlignment="Right" Margin="10"
+                        Style="{StaticResource ButtonStyle}" Background="Red"
+                        Click="Close_Click">Hủy</Button>
+            </DockPanel>
+        </Grid>
+    </Grid>
+</Window>

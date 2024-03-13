@@ -1,0 +1,40 @@
+﻿<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit"
+    xmlns:custom="clr-namespace:Microsoft.Windows.Controls.Primitives;assembly=WPFToolkit"
+    xmlns:controls2="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit.Extended">
+    <Style
+        TargetType="controls:DatePicker">
+        <Setter Property="Height" Value="22" />
+        <Style.Resources>
+            <Style TargetType="Button"/>
+        </Style.Resources>
+    </Style>
+    <Style TargetType="{x:Type custom:DatePickerTextBox}">
+        <Setter Property="Text" Value="Xin chọn ngày" />
+    </Style>
+    <Style
+        TargetType="controls2:MessageBox">
+        <Style.Resources>
+            <Style TargetType="Button">
+                <Setter Property="HorizontalContentAlignment"  Value="Center" />
+                <Setter Property="VerticalContentAlignment" Value="Center" />
+                <Setter Property="HorizontalAlignment"  Value="Center" />
+
+                <Setter Property="FocusVisualStyle" Value="{DynamicResource NuclearButtonFocusVisual}" />
+                <Setter Property="Foreground" Value="#FF042271" />
+                <Setter Property="Padding" Value="3" />
+                <Setter Property="Margin" Value="5,0,0,0" />
+                <Setter Property="Height" Value="25" />
+                <Setter Property="Width" Value="auto" />
+                <Setter Property="MinWidth" Value="75" />
+                <Setter Property="MinHeight" Value="25" />
+                <Setter Property="Margin" Value="5,0,0,0" />
+
+                <Setter Property="Template" Value="{DynamicResource ButtonTemplate}" />
+            </Style>
+        </Style.Resources>
+    </Style>
+
+</ResourceDictionary>

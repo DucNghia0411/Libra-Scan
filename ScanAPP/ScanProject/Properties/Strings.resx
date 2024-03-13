@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddNew" xml:space="preserve">
+    <value>Tạo mới</value>
+  </data>
+  <data name="ConfirmDeleteConnection_Caption" xml:space="preserve">
+    <value>Xóa kết nối</value>
+  </data>
+  <data name="ConfirmDeleteConnection_Message" xml:space="preserve">
+    <value>Bạn có muốn xóa kêt nối này không?\n\nLưu ý:\nTrường hợp kết nối này đã được sử dụng rồi thì chức này này chỉ xóa tạm chứ không xóa khỏi hệ thống.\nNgược lại nếu chưa được sử dụng thì nó sẽ được xóa khỏi hệ thống !</value>
+  </data>
+  <data name="ConfirmDeleteError_Caption" xml:space="preserve">
+    <value>Xóa lỗi</value>
+  </data>
+  <data name="ConfirmDeleteError_Message" xml:space="preserve">
+    <value>Bạn có muốn xóa lỗi này không?\n\nLưu ý:\nTrường hợp lỗi này đã được sử dụng rồi thì chức này này chỉ xóa tạm chứ không xóa khỏi hệ thống.\nNgược lại nếu chưa được sử dụng thì nó sẽ được xóa khỏi hệ thống !</value>
+  </data>
+  <data name="ConfirmDeleteNorm_Caption" xml:space="preserve">
+    <value>Xóa định mức</value>
+  </data>
+  <data name="ConfirmDeleteNorm_Message" xml:space="preserve">
+    <value>Bạn có muốn xóa định mức này không?\n\nLưu ý:\nTrường hợp định mức này đã được sử dụng rồi thì chức này này chỉ xóa tạm chứ không xóa khỏi hệ thống.\nNgược lại nếu chưa được sử dụng thì nó sẽ được xóa khỏi hệ thống !</value>
+  </data>
+  <data name="ConnectionCaption" xml:space="preserve">
+    <value>QUẢN LÝ DANH MỤC QUY ĐỊNH KẾT NỐI</value>
+  </data>
+  <data name="ConnectionIsExist" xml:space="preserve">
+    <value>Mã kết nối này đã tồn tại trong CSDL, vui lòng nhập lại mã khác !</value>
+  </data>
+  <data name="ConnectionValidator_ConnectionCode" xml:space="preserve">
+    <value>Mã kết nối không được để trống !</value>
+  </data>
+  <data name="ConnectionValidator_ConnectionName" xml:space="preserve">
+    <value>Tên kết nối không được để trống !</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="Disconnect_Caption" xml:space="preserve">
+    <value>Lỗi kết nối CSDL !</value>
+  </data>
+  <data name="Disconnect_Message" xml:space="preserve">
+    <value>Không kết nối được với CSDL. \nVui lòng coi lại kết nối hoặc cấu hình lại thông tin !</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="ErrorCaption" xml:space="preserve">
+    <value>QUẢN LÝ DANH MỤC LỖI</value>
+  </data>
+  <data name="ErrorCodeIsExist" xml:space="preserve">
+    <value>Mã lỗi này đã tồn tại trong CSDL, vui lòng nhập lại mã khác !</value>
+  </data>
+  <data name="ErrorValidator_ErrorCode" xml:space="preserve">
+    <value>Mã lỗi không được để trống !</value>
+  </data>
+  <data name="ErrorValidator_ErrorName" xml:space="preserve">
+    <value>Tên lỗi không được để trống !</value>
+  </data>
+  <data name="LS_Connection_AddNew" xml:space="preserve">
+    <value>Ctrl +N : Tạo kết nối mới </value>
+  </data>
+  <data name="LS_Connection_Close" xml:space="preserve">
+    <value>Ctrl + W : Đóng cửa sổ</value>
+  </data>
+  <data name="LS_Connection_ConnectionCode" xml:space="preserve">
+    <value>_Mã kết nối</value>
+  </data>
+  <data name="LS_Connection_IsUsed" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <data name="LS_Connection_Name" xml:space="preserve">
+    <value>_Tên kết nối</value>
+  </data>
+  <data name="LS_Connection_Note" xml:space="preserve">
+    <value>_Ghi chú</value>
+  </data>
+  <data name="LS_Connection_Save" xml:space="preserve">
+    <value>Ctrl + S : Lưu kết nối</value>
+  </data>
+  <data name="LS_Connection_Title" xml:space="preserve">
+    <value>Danh mục qui định kết nối</value>
+  </data>
+  <data name="LS_Error_AddNew" xml:space="preserve">
+    <value>Ctrl + N : Tạo lỗi mới</value>
+  </data>
+  <data name="LS_Error_Close" xml:space="preserve">
+    <value>Ctrl + W : Đóng cửa sổ</value>
+  </data>
+  <data name="LS_Error_ErrorCode" xml:space="preserve">
+    <value>_Mã lỗi</value>
+  </data>
+  <data name="LS_Error_IsUsed" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <data name="LS_Error_Mark" xml:space="preserve">
+    <value>_Điểm lỗi</value>
+  </data>
+  <data name="LS_Error_Name" xml:space="preserve">
+    <value>_Tên lỗi</value>
+  </data>
+  <data name="LS_Error_Note" xml:space="preserve">
+    <value>_Ghi chú</value>
+  </data>
+  <data name="LS_Error_Save" xml:space="preserve">
+    <value>Ctrl + S : Lưu lỗi</value>
+  </data>
+  <data name="LS_Error_Title" xml:space="preserve">
+    <value>Danh mục định nghĩa lỗi</value>
+  </data>
+  <data name="LS_Norm_AddNew" xml:space="preserve">
+    <value>Ctrl + N : Tạo định mức mới</value>
+  </data>
+  <data name="LS_Norm_Close" xml:space="preserve">
+    <value>Ctrl + W : Đóng cửa sổ</value>
+  </data>
+  <data name="LS_Norm_IsUsed" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <data name="LS_Norm_Name" xml:space="preserve">
+    <value>_Tên định mức</value>
+  </data>
+  <data name="LS_Norm_NormCode" xml:space="preserve">
+    <value>_Mã định mức</value>
+  </data>
+  <data name="LS_Norm_Note" xml:space="preserve">
+    <value>_Ghi chú</value>
+  </data>
+  <data name="LS_Norm_ProductType_Name" xml:space="preserve">
+    <value>_Loại sản phẩm</value>
+  </data>
+  <data name="LS_Norm_Save" xml:space="preserve">
+    <value>Ctrl + S : Lưu định mức</value>
+  </data>
+  <data name="LS_Norm_Title" xml:space="preserve">
+    <value>Danh mục định mức hàng hóa</value>
+  </data>
+  <data name="NormCaption" xml:space="preserve">
+    <value>QUẢN LÝ DANH MỤC ĐỊNH MỨC HÀNG HÓA</value>
+  </data>
+  <data name="NormCodeIsExist" xml:space="preserve">
+    <value>Mã định mức này đã tồn tại trong CSDL, vui lòng nhập lại mã khác !</value>
+  </data>
+  <data name="NormValidator_NormCode" xml:space="preserve">
+    <value>Mã định mức không được để trống !</value>
+  </data>
+  <data name="NormValidator_NormName" xml:space="preserve">
+    <value>Tên định mức không được để trống !</value>
+  </data>
+  <data name="NotConfig_Caption" xml:space="preserve">
+    <value>Cấu hình</value>
+  </data>
+  <data name="NotConfig_Message" xml:space="preserve">
+    <value>Bạn chưa cấu hình thông tin truy cập vào cơ sở dữ liệu hoặc thông tin cấu hình bị lỗi.\nVui lòng liên hệ với nhân viên quản trị để cấu hình thông tin !</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Lưu</value>
+  </data>
+  <data name="SaveConfigSuccessful_Caption" xml:space="preserve">
+    <value>Cấu hình</value>
+  </data>
+  <data name="SaveConfigSuccessful_Message" xml:space="preserve">
+    <value>Lưu thông tin cấu hình CSDL thành công.\nVui lòng khởi động lại chương trình để cấu hình mới có hiệu lực.\nBạn có muốn khởi động lại chương không?</value>
+  </data>
+  <data name="SaveSuccessful" xml:space="preserve">
+    <value>Lưu thành công !</value>
+  </data>
+  <data name="SYS_Config_AutoTransfer_Caption" xml:space="preserve">
+    <value>Tự động chuyển kết nối</value>
+  </data>
+  <data name="SYS_Config_AutoTransfer_Checkbox" xml:space="preserve">
+    <value>Tự động chuyển sang server dự phòng khi server có vấn đề.</value>
+  </data>
+  <data name="SYS_Config_Database_FirstDatabase" xml:space="preserve">
+    <value>Tên _cơ sở dữ liệu</value>
+  </data>
+  <data name="SYS_Config_Database_FirstPassword" xml:space="preserve">
+    <value>Mật _khẩu</value>
+  </data>
+  <data name="SYS_Config_Database_FirstServer" xml:space="preserve">
+    <value>Tên _server chính</value>
+  </data>
+  <data name="SYS_Config_Database_FirstUsername" xml:space="preserve">
+    <value>Tên _người dùng</value>
+  </data>
+  <data name="SYS_Config_Database_SecondDatabase" xml:space="preserve">
+    <value>Tên cơ _sở dữ liệu</value>
+  </data>
+  <data name="SYS_Config_Database_SecondPassword" xml:space="preserve">
+    <value>Mật k_hẩu</value>
+  </data>
+  <data name="SYS_Config_Database_SecondServer" xml:space="preserve">
+    <value>Tên s_erver dự phòng</value>
+  </data>
+  <data name="SYS_Config_Database_SecondUsername" xml:space="preserve">
+    <value>Tên n_gười dùng</value>
+  </data>
+  <data name="SYS_Config_FirstServer_Caption" xml:space="preserve">
+    <value>Server chính</value>
+  </data>
+  <data name="SYS_Config_Folder_Caption" xml:space="preserve">
+    <value>Cấu hình đường dẫn lưu hình</value>
+  </data>
+  <data name="SYS_Config_Folder_ColorImage" xml:space="preserve">
+    <value>Hình màu</value>
+  </data>
+  <data name="SYS_Config_Folder_RecogImage" xml:space="preserve">
+    <value>Hình nhận dạng</value>
+  </data>
+  <data name="SYS_Config_Folder_StandardImage" xml:space="preserve">
+    <value>Hình chuẩn</value>
+  </data>
+  <data name="SYS_Config_Monitor_Caption" xml:space="preserve">
+    <value>Cấu hình màn hình giám sát cho trạm</value>
+  </data>
+  <data name="SYS_Config_Monitor_Station" xml:space="preserve">
+    <value>Trạm quản lý</value>
+  </data>
+  <data name="SYS_Config_Monitor_StationMode" xml:space="preserve">
+    <value>Phân hệ cài đặt tại trung tâm</value>
+  </data>
+  <data name="SYS_Config_Monitor_StationMode_Caption" xml:space="preserve">
+    <value>Xác định nơi mà phân hệ được cài đặt</value>
+  </data>
+  <data name="SYS_Config_SecondServer_Caption" xml:space="preserve">
+    <value>Server dự phòng</value>
+  </data>
+  <data name="LS_Norm_MaxNorm" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="LS_Norm_MinNorm" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="LS_Norm_ValueNorm" xml:space="preserve">
+    <value>Giá trị định mức</value>
+  </data>
+  <data name="LS_Connection_Time" xml:space="preserve">
+    <value>Thời gian</value>
+  </data>
+  <data name="LS_Connection_Times" xml:space="preserve">
+    <value>Số lần</value>
+  </data>
+  <data name="SaveUnSuccessful" xml:space="preserve">
+    <value>Lưu có lỗi !</value>
+  </data>
+  <data name="UI_Notice" xml:space="preserve">
+    <value>Thông báo</value>
+  </data>
+  <data name="SaveConnectionUnSuccessful" xml:space="preserve">
+    <value>Lưu qui định kết nối không thành công !</value>
+  </data>
+  <data name="SaveErrorUnSuccessful" xml:space="preserve">
+    <value>Lưu định nghĩa lỗi không thành công  !</value>
+  </data>
+  <data name="SaveNormUnSuccessful" xml:space="preserve">
+    <value>Lưu định mức hàng hóa không thành công !</value>
+  </data>
+</root>

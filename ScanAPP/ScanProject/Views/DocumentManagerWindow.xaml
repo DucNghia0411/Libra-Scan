@@ -1,0 +1,33 @@
+﻿<Window x:Class="ScanProject.Views.DocumentManagerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScanProject.Views"
+        mc:Ignorable="d"
+        Title="DocumentManagerWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock x:Name="txtCurrentDocument" Text="Current Document: "/>
+        <ListView x:Name="lstvDocuments" MouseDoubleClick="lstvDocuments_MouseDoubleClick" ItemsSource="{Binding return_data}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Id}"/>
+                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="BatchId" DisplayMemberBinding="{Binding BatchId}"/>
+                    <GridViewColumn Header="UserId" DisplayMemberBinding="{Binding UserId}"/>
+                    <GridViewColumn Header="AdministrativeDivision" DisplayMemberBinding="{Binding AdministrativeDivision}"/>
+                    <GridViewColumn Header="DocumentNo" DisplayMemberBinding="{Binding DocumentNo}"/>
+                    <GridViewColumn Header="DocumentYear" DisplayMemberBinding="{Binding DocumentYear}"/>
+                    <GridViewColumn Header="DocumentType" DisplayMemberBinding="{Binding DocumentType}"/>
+                    <GridViewColumn Header="DocScanStatus" DisplayMemberBinding="{Binding DocScanStatus}"/>
+                    <GridViewColumn Header="ScannedDate" DisplayMemberBinding="{Binding ScannedDate}"/>
+                    <GridViewColumn Header="RenderedDate" DisplayMemberBinding="{Binding RenderedDate}"/>
+                    <GridViewColumn Header="ScannedImages" DisplayMemberBinding="{Binding ScannedImages}"/>
+                    <GridViewColumn Header="Note" DisplayMemberBinding="{Binding Note}"/>
+                    <GridViewColumn Header="DocProcessStatus" DisplayMemberBinding="{Binding DocProcessStatus}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Window>

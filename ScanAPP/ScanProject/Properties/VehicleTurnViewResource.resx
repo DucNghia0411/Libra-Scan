@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DanhGia_HopLe" xml:space="preserve">
+    <value>Hợp lệ</value>
+  </data>
+  <data name="DanhGia_KhongHopLe" xml:space="preserve">
+    <value>Không hợp lệ</value>
+  </data>
+  <data name="Log_LoadTypeOfHauKiem" xml:space="preserve">
+    <value>Load content fail</value>
+  </data>
+  <data name="UI_ChuaHauKiem" xml:space="preserve">
+    <value>Chưa hậu kiểm</value>
+  </data>
+  <data name="UI_Close" xml:space="preserve">
+    <value>_Đóng</value>
+  </data>
+  <data name="UI_Control" xml:space="preserve">
+    <value>Kiểm soát</value>
+  </data>
+  <data name="UI_DaHauKiem" xml:space="preserve">
+    <value>Đã hậu kiểm</value>
+  </data>
+  <data name="UI_DanhGia" xml:space="preserve">
+    <value>Đánh giá</value>
+  </data>
+  <data name="UI_Date" xml:space="preserve">
+    <value>Ngày</value>
+  </data>
+  <data name="UI_DateShift" xml:space="preserve">
+    <value>Ngày ca</value>
+  </data>
+  <data name="UI_Employee" xml:space="preserve">
+    <value>Nhân viên</value>
+  </data>
+  <data name="UI_ExportExcel" xml:space="preserve">
+    <value>Xuất _Excel </value>
+  </data>
+  <data name="UI_FilterParamater" xml:space="preserve">
+    <value>Điều kiện thống kê</value>
+  </data>
+  <data name="UI_FromDate" xml:space="preserve">
+    <value>Từ ngày</value>
+  </data>
+  <data name="UI_Grid_Lane" xml:space="preserve">
+    <value>Làn</value>
+  </data>
+  <data name="UI_Grid_DateTime" xml:space="preserve">
+    <value>Ngày giờ</value>
+  </data>
+  <data name="UI_Grid_KetQuaHauKiem" xml:space="preserve">
+    <value>Kết quả hậu kiểm</value>
+  </data>
+  <data name="UI_Grid_KhachHang" xml:space="preserve">
+    <value>Khách hàng</value>
+  </data>
+  <data name="UI_Grid_LoaiDoiTuong" xml:space="preserve">
+    <value>Loại đối tượng</value>
+  </data>
+  <data name="UI_Grid_LoaiUuTien" xml:space="preserve">
+    <value>Loại thẻ ưu tiên</value>
+  </data>
+  <data name="UI_Grid_LoaiVe" xml:space="preserve">
+    <value>Loại vé</value>
+  </data>
+  <data name="UI_Grid_MaDoiTuong" xml:space="preserve">
+    <value>Mã đối tượng</value>
+  </data>
+  <data name="UI_Grid_MaTheUuTien" xml:space="preserve">
+    <value>Mã thẻ ưu tiên</value>
+  </data>
+  <data name="UI_Grid_MaVe" xml:space="preserve">
+    <value>Mã vé</value>
+  </data>
+  <data name="UI_Grid_MenhGia" xml:space="preserve">
+    <value>Mệnh giá</value>
+  </data>
+  <data name="UI_Grid_NgayHetHan" xml:space="preserve">
+    <value>Ngày hết hạn</value>
+  </data>
+  <data name="UI_Grid_NgayHieuLuc" xml:space="preserve">
+    <value>Ngày hiệu lực</value>
+  </data>
+  <data name="UI_Grid_NhanVienSoat" xml:space="preserve">
+    <value>Nhân viên soát</value>
+  </data>
+  <data name="UI_Grid_Shift" xml:space="preserve">
+    <value>Ca</value>
+  </data>
+  <data name="UI_Grid_SoTienTru" xml:space="preserve">
+    <value>Số tiền trừ</value>
+  </data>
+  <data name="UI_Grid_SoXeDangKy" xml:space="preserve">
+    <value>Số xe đăng ký</value>
+  </data>
+  <data name="UI_Grid_SoXe" xml:space="preserve">
+    <value>Số xe</value>
+  </data>
+  <data name="UI_Grid_STT" xml:space="preserve">
+    <value>STT</value>
+  </data>
+  <data name="UI_Grid_ThoiHanVeDen" xml:space="preserve">
+    <value>Thời hạn vé đến</value>
+  </data>
+  <data name="UI_Grid_ThoiHanVeTu" xml:space="preserve">
+    <value>Thời hạn vé từ</value>
+  </data>
+  <data name="UI_HeThongHauKiem" xml:space="preserve">
+    <value>Hệ thống hậu kiểm</value>
+  </data>
+  <data name="UI_Lane" xml:space="preserve">
+    <value>Làn</value>
+  </data>
+  <data name="UI_Loi" xml:space="preserve">
+    <value>Lỗi</value>
+  </data>
+  <data name="UI_MaVe" xml:space="preserve">
+    <value>Mã vé</value>
+  </data>
+  <data name="UI_MenhGia" xml:space="preserve">
+    <value>Mệnh giá</value>
+  </data>
+  <data name="UI_NhanVienHauKiem" xml:space="preserve">
+    <value>Nhân viên hậu kiểm</value>
+  </data>
+  <data name="UI_Search" xml:space="preserve">
+    <value>_Tìm</value>
+  </data>
+  <data name="UI_Shift" xml:space="preserve">
+    <value>Ca</value>
+  </data>
+  <data name="UI_SoXe" xml:space="preserve">
+    <value>Số xe</value>
+  </data>
+  <data name="UI_Station" xml:space="preserve">
+    <value>Trạm</value>
+  </data>
+  <data name="UI_Time" xml:space="preserve">
+    <value>Thời gian</value>
+  </data>
+  <data name="UI_ToDate" xml:space="preserve">
+    <value>Đến ngày</value>
+  </data>
+  <data name="UI_ViewDetail" xml:space="preserve">
+    <value>_Xem chi tiết</value>
+  </data>
+  <data name="DanhGia_DangXemXet" xml:space="preserve">
+    <value>Đang xem xét</value>
+  </data>
+  <data name="DanhGia_ChuaHauKiem" xml:space="preserve">
+    <value>Chưa hậu kiểm</value>
+  </data>
+  <data name="DanhGia_DaHauKiem" xml:space="preserve">
+    <value>Đã hậu kiểm</value>
+  </data>
+  <data name="UI_VeQui" xml:space="preserve">
+    <value>Vé Quí</value>
+  </data>
+  <data name="UI_VeThang" xml:space="preserve">
+    <value>Vé Tháng</value>
+  </data>
+  <data name="UI_MaThietBi" xml:space="preserve">
+    <value>Mã thiết bị</value>
+  </data>
+  <data name="UI_SoTienTru" xml:space="preserve">
+    <value>Số tiền trừ</value>
+  </data>
+  <data name="UI_MaTheUuTien" xml:space="preserve">
+    <value>Mã thẻ ưu tiên</value>
+  </data>
+  <data name="UI_UuTien1Xe" xml:space="preserve">
+    <value>Ưu tiên 1 xe</value>
+  </data>
+  <data name="UI_UuTienDoanXe" xml:space="preserve">
+    <value>Ưu tiên đoàn xe</value>
+  </data>
+  <data name="UI_MaDoiTuong" xml:space="preserve">
+    <value>Mã đối tượng</value>
+  </data>
+  <data name="VE_QUI" xml:space="preserve">
+    <value>Vé quí</value>
+  </data>
+  <data name="VE_THANG" xml:space="preserve">
+    <value>Vé tháng</value>
+  </data>
+  <data name="UI_Grid_LoaiThietBi" xml:space="preserve">
+    <value>Loại thiết bị</value>
+  </data>
+  <data name="UI_Grid_MaThietBi" xml:space="preserve">
+    <value>Mã thiết bị</value>
+  </data>
+  <data name="VE_LUOT" xml:space="preserve">
+    <value>Vé lượt</value>
+  </data>
+  <data name="UI_DoiTuong" xml:space="preserve">
+    <value>Đối tượng</value>
+  </data>
+  <data name="DoiTuong_BTC" xml:space="preserve">
+    <value>Bộ tài chính (BTC)</value>
+  </data>
+  <data name="DoiTuong_OBU" xml:space="preserve">
+    <value>OBU</value>
+  </data>
+  <data name="DoiTuong_OBU2Piece" xml:space="preserve">
+    <value>OBU 2 mãnh</value>
+  </data>
+  <data name="DoiTuong_SmartCard" xml:space="preserve">
+    <value>Smart Card</value>
+  </data>
+  <data name="DoiTuong_UuTien1Xe" xml:space="preserve">
+    <value>Ưu tiên 1 Xe</value>
+  </data>
+  <data name="DoiTuong_UuTienDoanXe" xml:space="preserve">
+    <value>Ưu tiên đoàn xe</value>
+  </data>
+  <data name="DoiTuong_VeLuot" xml:space="preserve">
+    <value>Vé lượt</value>
+  </data>
+  <data name="DoiTuong_VeThoiGian" xml:space="preserve">
+    <value>Vé thời gian</value>
+  </data>
+  <data name="DoiTuong_TatCa" xml:space="preserve">
+    <value>Tất cả</value>
+  </data>
+  <data name="Message_NoData" xml:space="preserve">
+    <value>Không tìm thấy dữ liệu cho điều kiện thống kê bạn chọn !</value>
+  </data>
+  <data name="Message_Error_Time_MustBeLessThan_Now" xml:space="preserve">
+    <value>Ngày bắt đầu phải nhỏ hơn ngày hiện tại !</value>
+  </data>
+  <data name="Message_Error_Time_TooSmall" xml:space="preserve">
+    <value>Thời điểm thống kê quá nhỏ so với thực tế !</value>
+  </data>
+  <data name="Message_Error_FromDate_MustBeLessThan_ToDate" xml:space="preserve">
+    <value>Ngày bắt đầu phải nhỏ hơn ngày kết thúc !</value>
+  </data>
+  <data name="SQL_MINDATE" xml:space="preserve">
+    <value>19000101</value>
+  </data>
+  <data name="Message_IndexRecordNotValid" xml:space="preserve">
+    <value>Số mẫu tin không hợp lệ. Xin vui lòng nhập lại !</value>
+  </data>
+  <data name="Message_IndexRecordOverFlow" xml:space="preserve">
+    <value>Bạn nhập số mẫu tin lớn hơn tổng số mẫu tin. Xin vui lòng nhập lại !</value>
+  </data>
+  <data name="DoiTuong_OBUThoiGian" xml:space="preserve">
+    <value>OBU thời gian</value>
+  </data>
+  <data name="UI_LoaiDoiTuong" xml:space="preserve">
+    <value>Loại đối tượng</value>
+  </data>
+  <data name="UI_LoaiPhuongTien" xml:space="preserve">
+    <value>Loại xe</value>
+  </data>
+  <data name="UI_SoXeNhanDang" xml:space="preserve">
+    <value>Số xe nhận dạng</value>
+  </data>
+  <data name="UI_ThongTinKiemSoat" xml:space="preserve">
+    <value>Thông tin kiểm soát</value>
+  </data>
+  <data name="UI_ThongTinPhuongTien" xml:space="preserve">
+    <value>Thông tin phương tiện</value>
+  </data>
+  <data name="Message_Error_Date_MustBeLessThan_ToDate" xml:space="preserve">
+    <value>Ngày phải nhỏ hơn ngày hiện tại !</value>
+  </data>
+  <data name="UI_ChuPhuongTien" xml:space="preserve">
+    <value>Chủ phương tiện</value>
+  </data>
+  <data name="UI_DiaChi" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="UI_NgayDangKy" xml:space="preserve">
+    <value>Ngày đăng ký</value>
+  </data>
+  <data name="UI_SoCho" xml:space="preserve">
+    <value>Số chỗ</value>
+  </data>
+  <data name="UI_TaiTrong" xml:space="preserve">
+    <value>Tải trọng</value>
+  </data>
+  <data name="UI_XeUuTien" xml:space="preserve">
+    <value>Xe ưu tiên</value>
+  </data>
+  <data name="UI_2Cham" xml:space="preserve">
+    <value>: </value>
+  </data>
+  <data name="UI_CacLuotHauKiem" xml:space="preserve">
+    <value>Các lượt hậu kiểm</value>
+  </data>
+  <data name="UI_ChamLoi" xml:space="preserve">
+    <value>Chấm lỗi</value>
+  </data>
+  <data name="UI_Dung" xml:space="preserve">
+    <value>_Dừng</value>
+  </data>
+  <data name="UI_GhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="UI_Grid_LuotHauKiem" xml:space="preserve">
+    <value>Lượt hậu kiểm</value>
+  </data>
+  <data name="UI_Grid_NgayGioHauKiem" xml:space="preserve">
+    <value>Ngày giờ hậu kiểm</value>
+  </data>
+  <data name="UI_Grid_NhanVienHauKiem" xml:space="preserve">
+    <value>Nhân viên hậu kiểm</value>
+  </data>
+  <data name="UI_HeThongDanhGia" xml:space="preserve">
+    <value>Hệ thống đánh giá</value>
+  </data>
+  <data name="UI_Hinh" xml:space="preserve">
+    <value>Hình</value>
+  </data>
+  <data name="UI_HinhXeChuan" xml:space="preserve">
+    <value>Hình xe chuẩn</value>
+  </data>
+  <data name="UI_HinhXeQuaLan" xml:space="preserve">
+    <value>Hình xe qua làn</value>
+  </data>
+  <data name="UI_HopLe" xml:space="preserve">
+    <value>Hợp lệ</value>
+  </data>
+  <data name="UI_NhanVienDanhGia" xml:space="preserve">
+    <value>Nhân viên đánh giá</value>
+  </data>
+  <data name="UI_KhongHopLe" xml:space="preserve">
+    <value>Không hợp lệ</value>
+  </data>
+  <data name="UI_Grid_GhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="View_Detail" xml:space="preserve">
+    <value>Xem chi tiết</value>
+  </data>
+  <data name="Table_IN_CheckBtc" xml:space="preserve">
+    <value>IN_CheckBtc</value>
+  </data>
+  <data name="Table_IN_CheckForceOpen" xml:space="preserve">
+    <value>IN_CheckForceOpen</value>
+  </data>
+  <data name="Table_IN_CheckForceOpenGroup" xml:space="preserve">
+    <value>IN_CheckForceOpenGroup</value>
+  </data>
+  <data name="Table_IN_CheckForceOpenGroupDetail" xml:space="preserve">
+    <value>IN_CheckForceOpenGroupDetail</value>
+  </data>
+  <data name="Table_IN_CheckObu" xml:space="preserve">
+    <value>IN_CheckObu</value>
+  </data>
+  <data name="Table_IN_CheckObuSmartCard" xml:space="preserve">
+    <value>IN_CheckObuSmartCard</value>
+  </data>
+  <data name="Table_IN_CheckPeriodObu" xml:space="preserve">
+    <value>IN_CheckPeriodObu</value>
+  </data>
+  <data name="Table_IN_CheckPeriodTicket" xml:space="preserve">
+    <value>IN_CheckPeriodTicket</value>
+  </data>
+  <data name="Table_IN_CheckSmartCard" xml:space="preserve">
+    <value>IN_CheckSmartCard</value>
+  </data>
+  <data name="Table_IN_CheckTicket" xml:space="preserve">
+    <value>IN_CheckTicket</value>
+  </data>
+  <data name="Table_OUT_CheckBtc" xml:space="preserve">
+    <value>OUT_CheckBtc</value>
+  </data>
+  <data name="Table_OUT_CheckForceOpen" xml:space="preserve">
+    <value>OUT_CheckForceOpen</value>
+  </data>
+  <data name="Table_OUT_CheckForceOpenGroup" xml:space="preserve">
+    <value>OUT_CheckForceOpenGroup</value>
+  </data>
+  <data name="Table_OUT_CheckForceOpenGroupDetail" xml:space="preserve">
+    <value>OUT_CheckForceOpenGroupDetail</value>
+  </data>
+  <data name="Table_OUT_CheckObu" xml:space="preserve">
+    <value>OUT_CheckObu</value>
+  </data>
+  <data name="Table_OUT_CheckObuSmartCard" xml:space="preserve">
+    <value>OUT_CheckObuSmartCard</value>
+  </data>
+  <data name="Table_OUT_CheckPeriodObu" xml:space="preserve">
+    <value>OUT_CheckPeriodObu</value>
+  </data>
+  <data name="Table_OUT_CheckPeriodTicket" xml:space="preserve">
+    <value>OUT_CheckPeriodTicket</value>
+  </data>
+  <data name="Table_OUT_CheckSmartCard" xml:space="preserve">
+    <value>OUT_CheckSmartCard</value>
+  </data>
+  <data name="Table_OUT_CheckTicket" xml:space="preserve">
+    <value>OUT_CheckTicket</value>
+  </data>
+  <data name="UI_DangXemXet" xml:space="preserve">
+    <value>Đang xem xét</value>
+  </data>
+  <data name="UI_GiayChuyenLuot" xml:space="preserve">
+    <value>{0} giây chuyển lượt</value>
+  </data>
+  <data name="UI_ALL" xml:space="preserve">
+    <value>Tất cả</value>
+  </data>
+  <data name="TitleMessageBox" xml:space="preserve">
+    <value>Thông báo</value>
+  </data>
+</root>

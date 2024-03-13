@@ -1,0 +1,211 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UserSecretsId>86bb2b31-b915-4046-b3a8-47bdd6d85a72</UserSecretsId>
+    <ApplicationIcon>scanner.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resource\Icons\arrows.png" />
+    <None Remove="Resource\Icons\arrows64.png" />
+    <None Remove="Resource\Icons\brightness-and-contrast.png" />
+    <None Remove="Resource\Icons\cancelwhite.png" />
+    <None Remove="Resource\Icons\check-markwhite.png" />
+    <None Remove="Resource\Icons\checkmark.png" />
+    <None Remove="Resource\Icons\checkmark64.png" />
+    <None Remove="Resource\Icons\closewhite.png" />
+    <None Remove="Resource\Icons\cogwheel.png" />
+    <None Remove="Resource\Icons\crop.png" />
+    <None Remove="Resource\Icons\cross.png" />
+    <None Remove="Resource\Icons\cut.png" />
+    <None Remove="Resource\Icons\delete.png" />
+    <None Remove="Resource\Icons\diskette.png" />
+    <None Remove="Resource\Icons\document.png" />
+    <None Remove="Resource\Icons\edit.png" />
+    <None Remove="Resource\Icons\editwhite.png" />
+    <None Remove="Resource\Icons\eye.png" />
+    <None Remove="Resource\Icons\importfile.png" />
+    <None Remove="Resource\Icons\information.png" />
+    <None Remove="Resource\Icons\logout.png" />
+    <None Remove="Resource\Icons\merge.png" />
+    <None Remove="Resource\Icons\multiply.png" />
+    <None Remove="Resource\Icons\play.png" />
+    <None Remove="Resource\Icons\redo.png" />
+    <None Remove="Resource\Icons\refresh.png" />
+    <None Remove="Resource\Icons\saturation.png" />
+    <None Remove="Resource\Icons\undo.png" />
+    <None Remove="Resource\Icons\zoom-out.png" />
+    <None Remove="Resource\Icons\zoom.png" />
+    <None Remove="Resource\Image\addscanicon.png" />
+    <None Remove="Resource\Image\background\loginbg.jpg" />
+    <None Remove="Resource\Image\completeicon.png" />
+    <None Remove="Resource\Image\copyicon.png" />
+    <None Remove="Resource\Image\cropicon.png" />
+    <None Remove="Resource\Image\cursoricon.png" />
+    <None Remove="Resource\Image\cuticon.png" />
+    <None Remove="Resource\Image\deleteicon.png" />
+    <None Remove="Resource\Image\docs.png" />
+    <None Remove="Resource\Image\documenticon.png" />
+    <None Remove="Resource\Image\documents.png" />
+    <None Remove="Resource\Image\empty.jpg" />
+    <None Remove="Resource\Image\exiticon.png" />
+    <None Remove="Resource\Image\foldericon.png" />
+    <None Remove="Resource\Image\handicon.png" />
+    <None Remove="Resource\Image\homeicon.png" />
+    <None Remove="Resource\Image\image.png" />
+    <None Remove="Resource\Image\imageicon.png" />
+    <None Remove="Resource\Image\inserticon.png" />
+    <None Remove="Resource\Image\loginicon.png" />
+    <None Remove="Resource\Image\magnifingglassicon.png" />
+    <None Remove="Resource\Image\mergepageicon.png" />
+    <None Remove="Resource\Image\onepage.png" />
+    <None Remove="Resource\Image\optionicon.png" />
+    <None Remove="Resource\Image\pageicon.png" />
+    <None Remove="Resource\Image\pagemodeicon.png" />
+    <None Remove="Resource\Image\painterbrushicon.png" />
+    <None Remove="Resource\Image\pasteicon.png" />
+    <None Remove="Resource\Image\redoicon.png" />
+    <None Remove="Resource\Image\rescanicon.png" />
+    <None Remove="Resource\Image\rotatelefticon.png" />
+    <None Remove="Resource\Image\rotaterighticon.png" />
+    <None Remove="Resource\Image\saveicon.png" />
+    <None Remove="Resource\Image\scanicon.png" />
+    <None Remove="Resource\Image\selectionmodeicon.png" />
+    <None Remove="Resource\Image\stop-button.png" />
+    <None Remove="Resource\Image\twopage.png" />
+    <None Remove="Resource\Image\undoicon.png" />
+    <None Remove="Resource\Image\usericon.png" />
+    <None Remove="Resource\Image\whiteimage.png" />
+    <None Remove="Resource\Image\zoominicon.png" />
+    <None Remove="Resource\Image\zoomouticon.png" />
+    <None Remove="Resource\Logo\logo_LibraSoft_2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="scanner.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AForge.Imaging" Version="2.2.5" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.8.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+    <PackageReference Include="Notification.Wpf" Version="7.0.0" />
+    <PackageReference Include="NTwain" Version="3.7.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LIBRA.Scan.Common\LIBRA.Scan.Common.csproj" />
+    <ProjectReference Include="..\LIBRA.Scan.Data\LIBRA.Scan.Data.csproj" />
+    <ProjectReference Include="..\LIBRA.Scan.Entities\LIBRA.Scan.Entities.csproj" />
+    <ProjectReference Include="..\LIBRA.Scan.Helpers\LIBRA.Scan.Helpers.csproj" />
+    <ProjectReference Include="..\LIBRA.Scan.Services\LIBRA.Scan.Services.csproj" />
+	<ProjectReference Include="..\LIBRA.Scan.ApiIntergration\LIBRA.Scan.ApiIntergration.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RibbonControlsLibrary">
+      <HintPath>lib\RibbonControlsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit">
+      <HintPath>lib\WPFToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit.Extended">
+      <HintPath>lib\WPFToolkit.Extended.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit">
+      <HintPath>lib\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resource\Icons\arrows.png" />
+    <Resource Include="Resource\Icons\arrows64.png" />
+    <Resource Include="Resource\Icons\brightness-and-contrast.png" />
+    <Resource Include="Resource\Icons\cancelwhite.png" />
+    <Resource Include="Resource\Icons\check-markwhite.png" />
+    <Resource Include="Resource\Icons\checkmark.png" />
+    <Resource Include="Resource\Icons\checkmark64.png" />
+    <Resource Include="Resource\Icons\closewhite.png" />
+    <Resource Include="Resource\Icons\cogwheel.png" />
+    <Resource Include="Resource\Icons\crop.png" />
+    <Resource Include="Resource\Icons\cross.png" />
+    <Resource Include="Resource\Icons\cut.png" />
+    <Resource Include="Resource\Icons\delete.png" />
+    <Resource Include="Resource\Icons\diskette.png" />
+    <Resource Include="Resource\Icons\document.png" />
+    <Resource Include="Resource\Icons\edit.png" />
+    <Resource Include="Resource\Icons\editwhite.png" />
+    <Resource Include="Resource\Icons\eye.png" />
+    <Resource Include="Resource\Icons\importfile.png" />
+    <Resource Include="Resource\Icons\information.png" />
+    <Resource Include="Resource\Icons\logout.png" />
+    <Resource Include="Resource\Icons\merge.png" />
+    <Resource Include="Resource\Icons\multiply.png" />
+    <Resource Include="Resource\Icons\play.png" />
+    <Resource Include="Resource\Icons\redo.png" />
+    <Resource Include="Resource\Icons\refresh.png" />
+    <Resource Include="Resource\Icons\saturation.png" />
+    <Resource Include="Resource\Icons\undo.png" />
+    <Resource Include="Resource\Icons\zoom-out.png" />
+    <Resource Include="Resource\Icons\zoom.png" />
+    <Resource Include="Resource\Image\addscanicon.png" />
+    <Resource Include="Resource\Image\background\loginbg.jpg" />
+    <Resource Include="Resource\Image\completeicon.png" />
+    <Resource Include="Resource\Image\copyicon.png" />
+    <Resource Include="Resource\Image\cropicon.png" />
+    <Resource Include="Resource\Image\cursoricon.png" />
+    <Resource Include="Resource\Image\cuticon.png" />
+    <Resource Include="Resource\Image\deleteicon.png" />
+    <Resource Include="Resource\Image\docs.png" />
+    <Resource Include="Resource\Image\documenticon.png" />
+    <Resource Include="Resource\Image\documents.png" />
+    <Resource Include="Resource\Image\empty.jpg" />
+    <Resource Include="Resource\Image\exiticon.png" />
+    <EmbeddedResource Include="Resource\Image\homeicon.png" />
+    <Resource Include="Resource\Image\foldericon.png" />
+    <Resource Include="Resource\Image\handicon.png" />
+    <Resource Include="Resource\Image\image.png" />
+    <Resource Include="Resource\Image\imageicon.png" />
+    <Resource Include="Resource\Image\inserticon.png" />
+    <Resource Include="Resource\Image\loginicon.png" />
+    <Resource Include="Resource\Image\magnifingglassicon.png" />
+    <Resource Include="Resource\Image\mergepageicon.png" />
+    <Resource Include="Resource\Image\onepage.png" />
+    <Resource Include="Resource\Image\optionicon.png" />
+    <Resource Include="Resource\Image\pageicon.png" />
+    <Resource Include="Resource\Image\pagemodeicon.png" />
+    <Resource Include="Resource\Image\painterbrushicon.png" />
+    <Resource Include="Resource\Image\pasteicon.png" />
+    <Resource Include="Resource\Image\redoicon.png" />
+    <Resource Include="Resource\Image\rescanicon.png" />
+    <Resource Include="Resource\Image\rotatelefticon.png" />
+    <Resource Include="Resource\Image\rotaterighticon.png" />
+    <Resource Include="Resource\Image\saveicon.png" />
+    <Resource Include="Resource\Image\scanicon.png" />
+    <Resource Include="Resource\Image\selectionmodeicon.png" />
+    <Resource Include="Resource\Image\stop-button.png" />
+    <Resource Include="Resource\Image\twopage.png" />
+    <Resource Include="Resource\Image\undoicon.png" />
+    <Resource Include="Resource\Image\usericon.png" />
+    <Resource Include="Resource\Image\whiteimage.png" />
+    <Resource Include="Resource\Image\zoominicon.png" />
+    <Resource Include="Resource\Image\zoomouticon.png" />
+    <Resource Include="Resource\Logo\logo_LibraSoft_2.png" />
+  </ItemGroup>
+</Project>

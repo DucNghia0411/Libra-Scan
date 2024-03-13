@@ -1,0 +1,98 @@
+﻿<Window x:Class="ScanProject.Views.ScanSettingManagerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScanProject.Views"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Cài đặt" Height="280" Width="250"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Window.Resources>
+        <Style x:Key="SettingButton" TargetType="Button">
+            <Setter Property="Background" Value="#00AE72" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="BorderThickness" Value="2" />
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="Width" Value="150" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="Button" TargetType="Button">
+            <Setter Property="Background" Value="#00AE72" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="BorderThickness" Value="2" />
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="Width" Value="100" />
+            <Setter Property="Height" Value="35" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <GroupBox 
+                materialDesign:ColorZoneAssist.Background="#00AE72"
+                materialDesign:ColorZoneAssist.Foreground="Black"
+                materialDesign:ColorZoneAssist.Mode="Custom"
+                Header="DANH SÁCH CÀI ĐẶT" 
+                FontWeight="Bold"
+                BorderThickness="2"
+                Margin="10,0,10,10"
+                Grid.Row="0">
+            <StackPanel>
+                <Button Style="{StaticResource SettingButton}" 
+                    FontSize="13" 
+                    FontWeight="Bold"
+                    Margin="5,5,5,5"
+                    Click="SftpConfig_Click">
+                    <Grid>
+                        <TextBlock x:Name="txtSftpConfig">Cài đặt SFTP</TextBlock>
+                        <ProgressBar 
+                            x:Name="proSftp" 
+                            IsIndeterminate="True" 
+                            Visibility="Collapsed"
+                            Width="150"
+                            Height="45"
+                            Foreground="#008C5E"
+                            Background="#98D0B9"/>
+                    </Grid>
+                </Button>
+                <!--<Button Style="{StaticResource SettingButton}" 
+                    FontSize="13" 
+                    FontWeight="Bold"
+                    Margin="5,5,5,5"
+                    Click="PortConfig_Click">
+                    <Grid>
+                        <TextBlock x:Name="txtPortConfig">Cài đặt URL</TextBlock>
+                        <ProgressBar 
+                            x:Name="proPort" 
+                            IsIndeterminate="True" 
+                            Visibility="Collapsed"
+                            Width="150"
+                            Height="45"
+                            Foreground="#008C5E"
+                            Background="#98D0B9"/>
+                    </Grid>
+                </Button>-->
+            </StackPanel>
+        </GroupBox>
+
+        <DockPanel Grid.Row="1">
+            <Button Style="{StaticResource Button}"
+                    HorizontalAlignment="Right"
+                    Background="Red"
+                    Margin="0,0,10,10"
+                    Click="Close_Click">
+                Đóng
+            </Button>
+        </DockPanel>
+    </Grid>
+</Window>
