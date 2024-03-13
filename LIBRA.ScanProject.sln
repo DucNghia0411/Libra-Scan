@@ -37,10 +37,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LIBRA.Scan.ApiIntergration"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LIBRA.Scan.Helpers", "ScanAPP\LIBRA.Scan.Helpers\LIBRA.Scan.Helpers.csproj", "{71BD36E9-11EE-4567-B061-38BA64127017}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Setup", "Setup", "{FAF0DD58-E442-4CA6-9C3A-AD72A2E73C87}"
-EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ScanAppSetup", "Setup\ScanAppSetup\ScanAppSetup.vdproj", "{708AAF21-90A7-49C3-A66F-47E553299DAC}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,8 +95,6 @@ Global
 		{71BD36E9-11EE-4567-B061-38BA64127017}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71BD36E9-11EE-4567-B061-38BA64127017}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71BD36E9-11EE-4567-B061-38BA64127017}.Release|Any CPU.Build.0 = Release|Any CPU
-		{708AAF21-90A7-49C3-A66F-47E553299DAC}.Debug|Any CPU.ActiveCfg = Debug
-		{708AAF21-90A7-49C3-A66F-47E553299DAC}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -121,7 +115,6 @@ Global
 		{B2F436B8-9DB4-4F29-B0A9-61947DCE5F22} = {24CF675D-9C70-4E3C-BA24-CC473E32EC77}
 		{5D8D958C-3FF3-4BC8-8EF9-CFA1B2BAB154} = {5D6EAA25-E594-4049-AD3E-38EC7BD3B162}
 		{71BD36E9-11EE-4567-B061-38BA64127017} = {5D6EAA25-E594-4049-AD3E-38EC7BD3B162}
-		{708AAF21-90A7-49C3-A66F-47E553299DAC} = {FAF0DD58-E442-4CA6-9C3A-AD72A2E73C87}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {60BC3409-F78E-4DC0-A5EE-8D20B271A299}

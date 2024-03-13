@@ -1187,16 +1187,26 @@ namespace ScanProject
         {
             if(_twain != null)
                 _twain.Close();
+
+            var result = System.Windows.MessageBox.Show("Bạn có chắc chắn muốn thoát khỏi hệ thống?", "Thông báo!!", MessageBoxButton.OKCancel, MessageBoxImage.Error);
+            switch (result)
+            {
+                case MessageBoxResult.OK:
+                    Application.Current.Shutdown();
+                    break;
+
+                case MessageBoxResult.Cancel:
+                    e.Cancel = true;
+                    break;
+            }
         }
 
         private void CreateFolder(string folderPath)
         {
             try
             {
-                // Check if the folder already exists
                 if (!Directory.Exists(folderPath))
                 {
-                    // Create the folder
                     Directory.CreateDirectory(folderPath);
                 }
             }

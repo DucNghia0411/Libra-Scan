@@ -44,16 +44,10 @@ namespace ScanProject
 
         protected override async void OnStartup(StartupEventArgs e)
         {
-            WriteToFile("Start at: " + DateTime.Now);
             await _host!.StartAsync();
-            WriteToFile("Start host success at: " + DateTime.Now);
-            _host.Services.GetRequiredService<MainWindow>();
-
-            MainWindow mainWindow = new MainWindow();
+            MainWindow mainWindow = _host.Services.GetRequiredService<MainWindow>();
             //LoginWindow loginWindow = new LoginWindow();
-            WriteToFile("Show window at: " + DateTime.Now);
-            mainWindow.ShowDialog();
-            WriteToFile("Show window success at: " + DateTime.Now);
+            mainWindow.Show();
             base.OnStartup(e);
         }
 
